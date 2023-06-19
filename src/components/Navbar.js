@@ -32,9 +32,12 @@ function Navbar() {
                         </div>
                       </div>
                       <div className="nav-win">
-                        <div className="link"><Link to="/">Win</Link></div>
+                        <div id="winLink" className="link"><Link to="/">Win</Link></div>
                         <div className="down-menu">
-                          <div><Link to="/">Trading Reward</Link></div>
+                          <div class="tradingRewardLink"><Link to="/">Trading Reward
+                          <div>
+                                LIVE
+                            </div></Link></div>
                           <div><Link to="/">Trading Competition</Link></div>
                           <div><Link to="/">Prediction (BETA)</Link></div>
                           <div><Link to="/">Lottery</Link></div>
