@@ -1,6 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import React from 'react';
+
 
 function Navbar() {
+    const location = useLocation();
+    const tradingRewardLocation = location.pathname === '/trading-reward'
   return (
     <div>
       <header className="nav">
@@ -32,9 +36,9 @@ function Navbar() {
                         </div>
                       </div>
                       <div className="nav-win">
-                        <div id="winLink" className="link"><Link to="/">Win</Link></div>
+                        <div id={tradingRewardLocation ? "winLinkActivated" : "winLink"} className="link"><Link to="/">Win</Link></div>
                         <div className="down-menu">
-                          <div class="tradingRewardLink"><Link to="/">Trading Reward
+                          <div className={tradingRewardLocation ? "tradingRewardLinkActivated" : "tradingRewardLink"}><Link to="/trading-reward">Trading Reward
                           <div>
                                 LIVE
                             </div></Link></div>
