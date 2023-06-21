@@ -1,10 +1,14 @@
 import './App.scss';
-import HomePage from './pages/HomePage'; 
+import Footer from './components/Footer';
+import { Lottery } from './components/Lottery';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div>
-      <HomePage />
+      <Navbar/>
+      <Lottery/>
+      <Footer/>
     </div>
   );
 }
