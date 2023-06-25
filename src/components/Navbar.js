@@ -32,7 +32,7 @@ function Navbar() {
                         <div className="link"><Link to="/">Earn</Link></div>
                         <div className="down-menu">
                           <div><Link to="/">Farms</Link></div>
-                          <div><Link to="/">Pools</Link></div>
+                          <div><Link to="pools">Pools</Link></div>
                         </div>
                       </div>
                       <div className="nav-win">
@@ -139,189 +139,189 @@ function Navbar() {
           </nav>
       </header>
 
-      <div class="mobile-nav-wrap">
-        <div class="mobile-nav">
-          <div class="mbnav-el">
-            <div class="mbnav-btn">
-                <div class="mbnav-btn">
+      <div className="mobile-nav-wrap">
+        <div className="mobile-nav">
+          <div className="mbnav-el">
+            <div className="mbnav-btn">
+                <div className="mbnav-btn">
                     <span>
                         <Link to="/" style={{opacity: 1}}>
-                            <div class="mnav-btn-cntnt" height="100%">
-                                <div class="mnbc-svg"><img src="/assets/svgexport-49.svg" alt="" /></div>
-                                <div class="mnbc-txt">Trade</div>
+                            <div className="mnav-btn-cntnt" height="100%">
+                                <div className="mnbc-svg"><img src="/assets/svgexport-49.svg" alt="" /></div>
+                                <div className="mnbc-txt">Trade</div>
                             </div>
                         </Link>
                     </span>
                 </div>
             </div>
-            <div class="mbnav-list">
-                <div class="mnli-el">
+            <div className="mbnav-list">
+                <div className="mnli-el">
                     <Link to="/">
                         Swap
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="/">
                         Liquidity
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="/">
                         Perpetual
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="/">
                         Bridge
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="/">
                         Limit (V2)
                     </Link>
                 </div>
             </div>
           </div>
-          <div class="mbnav-el">
-            <div class="mbnav-btn">
-                <div class="mbnav-btn">
+          <div className="mbnav-el">
+            <div className="mbnav-btn">
+                <div className="mbnav-btn">
                     <span>
                         <Link to="" style={{opacity: 1}}>
-                            <div class="mnav-btn-cntnt">
-                                <div class="mnbc-svg"><img src="/assets/svgexport-51.svg" alt="" /></div>
-                                <div class="mnbc-txt" color="textSubtle" font-weight="400" font-size="10px">Earn</div>
+                            <div className="mnav-btn-cntnt">
+                                <div className="mnbc-svg"><img src="/assets/svgexport-51.svg" alt="" /></div>
+                                <div className="mnbc-txt" color="textSubtle" fontWeight="400" fontSize="10px">Earn</div>
                             </div>
                         </Link>
                     </span>
                 </div>
             </div>
-            <div class="mbnav-list">
-                <div class="mnli-el">
+            <div className="mbnav-list">
+                <div className="mnli-el">
                     <Link to="#">
                         Farms
                     </Link>
                 </div>
-                <div class="mnli-el">
-                    <Link to="#">
+                <div className="mnli-el">
+                    <Link to="pools">
                         Pools
                     </Link>
                 </div>
             </div>
           </div>
-          <div class="mbnav-el">
-            <div class="mbnav-btn">
-                <div class="mbnav-btn">
+          <div className="mbnav-el">
+            <div className="mbnav-btn">
+                <div className="mbnav-btn">
                     <span>
                         <Link to="" style={{opacity: 1}}>
-                            <div class="mnav-btn-cntnt">
-                                <div class="mnbc-svg"><img src="/assets/svgexport-53.svg" alt=""/></div>
-                                <div class="mnbc-txt" color="textSubtle" font-weight="400" font-size="10px">Win</div>
+                            <div className="mnav-btn-cntnt">
+                                <div className="mnbc-svg"><img src="/assets/svgexport-53.svg" alt=""/></div>
+                                <div className="mnbc-txt" color="textSubtle" fontWeight="400" fontSize="10px">Win</div>
                             </div>
                         </Link>
                     </span>
                 </div>
             </div>
-            <div class="mbnav-list">
-                <div class="mnli-el">
+            <div className="mbnav-list">
+                <div className="mnli-el">
                     <Link to="#">
                         Trading Competition
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="#">
                         Prediction (BETA)
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="#">
                         Lottery
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="#">
                         Pottery (BETA)
                     </Link>
                 </div>
             </div>
           </div>
-          <div class="mbnav-el">
-            <div class="mbnav-btn">
-                <div class="mbnav-btn">
+          <div className="mbnav-el">
+            <div className="mbnav-btn">
+                <div className="mbnav-btn">
                     <span>
                         <Link to="" style={{opacity: 1}}>
-                            <div class="mnav-btn-cntnt">
-                                <div class="mnbc-svg"><img src="/assets/svgexport-55.svg" alt=""/></div>
-                                <div class="mnbc-txt" color="textSubtle" font-weight="400" font-size="10px" style={{marginLeft: 4}}>NFT</div>
+                            <div className="mnav-btn-cntnt">
+                                <div className="mnbc-svg"><img src="/assets/svgexport-55.svg" alt=""/></div>
+                                <div className="mnbc-txt" color="textSubtle" fontWeight="400" fontSize="10px" style={{marginLeft: 4}}>NFT</div>
                             </div>
                         </Link>
                     </span>
                 </div>
             </div>
-            <div class="mbnav-list">
-                <div class="mnli-el">
+            <div className="mbnav-list">
+                <div className="mnli-el">
                     <Link to="#">
                         Overview
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="#">
                         Collections
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="#">
                         Activity
                     </Link>
                 </div>
             </div>
           </div>
-          <div class="mbnav-el">
-            <div class="mbnav-btn">
-                <div class="mbnav-btn">
+          <div className="mbnav-el">
+            <div className="mbnav-btn">
+                <div className="mbnav-btn">
                     <span>
                         <Link to="" style={{opacity: 1, marginTop: 4}}>
-                            <div class="mnav-btn-cntnt" height="100%">
-                                <div class="mnbc-svg" height="22px" width="21px"><img src="/assets/svgexport-5.svg" alt="" style={{marginTop: 5}}/></div>
+                            <div className="mnav-btn-cntnt" height="100%">
+                                <div className="mnbc-svg" height="22px" width="21px"><img src="/assets/svgexport-5.svg" alt="" style={{marginTop: 5}}/></div>
                             </div>
                         </Link>
-                        <span class="mbnav-success"></span>
+                        <span className="mbnav-success"></span>
                     </span>
                 </div>
             </div>
-            <div class="mbnav-list">
-                <div class="mnli-el">
+            <div className="mbnav-list">
+                <div className="mnli-el">
                     <Link to="#">
                         Info
-                        <div class="mnli-el-new">New</div>
+                        <div className="mnli-el-new">New</div>
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="#">
                         IFO
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="#">
                         Affiliate Program
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="#">
                         Voting
-                        <div class="mnli-el-new">Vote Now</div>
+                        <div className="mnli-el-new">Vote Now</div>
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="#">
                         Leaderboard
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="#">
                         Blog
                     </Link>
                 </div>
-                <div class="mnli-el">
+                <div className="mnli-el">
                     <Link to="#">
                         Docs
                     </Link>
