@@ -286,10 +286,33 @@
                     }
                     .viewstyle-buttons{
                         button{
-                            padding: 2px;
+                          position: relative;
+                          -moz-box-align: center;
+                          align-items: center;
+                          border: 0px none;
+                          border-radius: 16px;
+                          cursor: pointer;
+                          display: inline-flex;
+                          font-family: inherit;
+                          font-size: 16px;
+                          font-weight: 600;
+                          -moz-box-pack: center;
+                          justify-content: center;
+                          letter-spacing: 0.03em;
+                          line-height: 1;
+                          opacity: 1;
+                          outline: 0px;
+                          transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                          height: 32px;
+                          width: 32px;
+                          padding: 0px 16px;
+                          background-color: transparent;
+                          color: var(--colors-primary);
+                          box-shadow: none;
+                          padding: 2px;
                         }
                         button:hover{
-                            opacity: 0.65;
+                          opacity: 0.65;
                         }
                     }
                     .list-switch-w{
