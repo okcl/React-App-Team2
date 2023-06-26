@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom"
+import React from "react"
+
 function FinishedPools() {
     return(
         <div className="content">
@@ -13,13 +16,13 @@ function FinishedPools() {
                     </div>
                     <div className="list-switch-w">
                         <div className="list-switch">
-                            <a href="/pools.html" scale="sm" id="unselected-a">
+                            <Link to="/pools" scale="sm" id="unselected-a">
                                 Live
-                            </a>
+                            </Link>
                             <span>
-                                <a href="/history.html" id="selected-a">
+                                <Link to="/pools/history" id="selected-a">
                                     Finished
-                                </a>
+                                </Link>
                             </span>
                         </div>
                     </div>

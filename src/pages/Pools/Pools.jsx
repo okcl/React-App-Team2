@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LivePools from "./LivePools";
 import FinishedPools from "./FinishedPools";
+import { Routes, Route } from 'react-router-dom';
+
 
 function Pools() {
   return(
@@ -56,7 +58,10 @@ function Pools() {
                     </div>
           </div>
         </div>
-        <LivePools />
+        <Routes>
+          <Route path="/" element={<LivePools />} />
+          <Route path="/pools/history" element={<FinishedPools />} />
+        </Routes>
       </div>
   </div>
   )

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 function LivePools() {
     return(
@@ -15,13 +16,13 @@ function LivePools() {
                     </div>
                     <div className="list-switch-w">
                         <div className="list-switch">
-                            <a scale="sm" href="" id="selected-a">
+                            <Link to="/pools"scale="sm" id="selected-a">
                                 Live
-                            </a>
+                            </Link>
                             <span>
-                                <a href="/history.html" id="unselected-a">
+                                <Link to="/pools/history" id="unselected-a">
                                     Finished
-                                </a>
+                                </Link>
                             </span>
                         </div>
                     </div>
