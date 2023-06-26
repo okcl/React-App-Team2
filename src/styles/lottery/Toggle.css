@@ -1,0 +1,38 @@
+.toggle-container{
+    position: relative;
+    width: 230px;
+    height: 33px;
+    background-color: #eeeaf4;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 15px;
+    margin: 20px;
+}
+.toggle-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 115px;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    color: #eeeaf4;
+    background-color: #7a6eaa;
+    box-shadow: 0 2px 4px rgb(0,0,0,0.25);
+    padding: 8px 12px;
+    border-radius: 15px;
+    position: absolute;
+    transition: all 0.2s ease;
+    left: 113px;
+}
+
+.disabled{
+    background-color: #7a6eaa;
+    left: 2px;
+}
+
+.disabled-btn{
+    color: #7a6eaa;
+}
+

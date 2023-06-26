@@ -1,5 +1,7 @@
-import TheCountUp from "./CountUpLot";
+import TheCountUp from "./CountUp";
 import '../styles/lottery/lottery.css'
+import ToggleSwitch from "./ToggleLot";
+import { SwitchingBtn } from "./SwitchingLot";
 
 export function Lottery(){
     return (
@@ -139,9 +141,6 @@ export function Lottery(){
           </div>
           </div>
         </div>
-
-
-
 
 
         <div id="div5">
