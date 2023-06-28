@@ -13,10 +13,21 @@ body {
                         display: flex;
                         align-items: center;
                     }
-                    #winLink a{
+                    #winLinkActivated a{
                         color: var(--colors-secondary);
                         font-weight: 600;
                     }
+                    #winLinkActivated{
+                        ::after{
+                        content: "";
+                        background: var(--colors-failure);
+                        height: 8px;
+                        width: 8px;
+                        border-radius: 100%;
+                        margin-left: 12px;
+                        }
+                    }
+                    
                     #winLink{
                         ::after{
                         content: "";
@@ -28,10 +39,24 @@ body {
                         }
                     }
                     .down-menu {
-                        .tradingRewardLink {
+                        .tradingRewardLinkActivated {
                             a {
                                 color: var(--colors-secondary);
                                 font-weight:  600;
+                                div {
+                                    color: var(--colors-failure);
+                                    border: solid 2px var(--colors-failure);
+                                    border-radius: 25px;
+                                    padding: 0 5px;
+                                    line-height: 1.2;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                }
+                            }
+                            
+                        }
+                        .tradingRewardLink {
+                            a {
                                 div {
                                     color: var(--colors-failure);
                                     border: solid 2px var(--colors-failure);
