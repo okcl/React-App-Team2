@@ -1,70 +1,110 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Pancakeswap project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. [About Trello](#trello)
+2. [Developing landing page](#app-html)
+3. [How to work with branches](#branches)
+    1. [Creating a task branch](#creating-a-task-branch)
+    2. [Getting the updates for your branch from development](#getting-the-updates-for-your-branch-from-development)
+    3. [Incorporating a finished task on development](#incorporating-a-finished-task-on-development)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
+# Trello
+You need to join trello -->
+    [Our Trello Page](https://trello.com/invite/b/MO9jiL4e/ATTIf428aa9db880d6832a5e3330fc0274aeF8E5AD87/web-development)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## You choose the task that you wanted to do from to-do list and click it
+![trello main page](https://i.imgur.com/Jn7S9PG.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## You have to click join to claim the task and start working on it.
+![trello task selection](https://i.imgur.com/Og2dl6L.png)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# App html
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This is the page that we are currently working on. Task parts are divided clearly. You just put your code at your part.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![branch working system](https://i.imgur.com/Fop1OCO.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+---
+# Branches
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We work on development branch but **we don't** make changes on it. You will **create new branch** for the task that you assigned yourself.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+![branch working system](https://i.imgur.com/DwiR2BF.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Creating a task branch
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This is an exapmle to work on for the task1, so you have to change it depending on yours.
 
-### Advanced Configuration
+```
+$ git checkout development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Switches to branch to development
 
-### Deployment
+$ git pull origin development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Get all up to date changes from development branch
 
-### `npm run build` fails to minify
+$ git checkout -b task1 development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Switched to a new branch "task1"
+
+```
+
+## Getting the updates for your branch from development
+
+```
+$ git checkout development
+
+Switches to branch to development
+
+$ git pull origin development
+
+Get all up to date changes from development branch
+
+$ git checkout task1
+
+Switches to your working branch
+
+$ git merge development
+
+Merges the updates to your branch
+```
+
+
+## Incorporating a finished task on development
+
+After pushing the code to your own branch you need to make a pull request from the webpage.
+
+
+**Simply click on branches**
+![github main page](https://i.imgur.com/WY7Eq9F.png)
+
+
+**Click "Pull Request" for the branch that you want to merge**
+![github main page](https://i.imgur.com/XxFW4aU.png)
+
+**After choose Development for destination branch, leave a comment about the changes that you did and make the pull request.**
+![github main page](https://i.imgur.com/lvqwBZb.png)
+
+**Now merge button will appear for you and after you click it will be merged to development**
+
+
+[Go to top](#pancakeswap-project)
+
+
+
