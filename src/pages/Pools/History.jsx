@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LivePools from "./LivePools";
 import { useState } from "react";
 import FinishedPools from "./FinishedPools";
 
 
 
-function Pools() {
+function PoolsHistory() {
 
   const [sortOption, setSortOption] = useState("hot");
 
@@ -79,19 +78,19 @@ function Pools() {
                 <div className="cbuttons">
                     <div className="viewstyle-buttons">
                         <button>
-                            <img src="assets/boxview.svg" alt="" />
+                            <img src="/assets/boxview.svg" alt="" />
                         </button>
                         <button>
-                            <img src="assets/listview.svg" alt="" />
+                            <img src="/assets/listview.svg" alt="" />
                         </button>
                     </div>
                     <div className="list-switch-w">
                         <div className="list-switch">
-                            <Link to="/pools"scale="sm" id="selected-a">
+                            <Link to="/pools"scale="sm" id="unselected-a">
                                 Live
                             </Link>
                             <span>
-                                <Link to="/pools/history" id="unselected-a">
+                                <Link to="/pools/history" id="selected-a">
                                     Finished
                                 </Link>
                             </span>
@@ -117,7 +116,7 @@ function Pools() {
                                         <div className="stext">
                                             Hot
                                         </div>
-                                        <img src="assets//down-arrow-filled.svg" alt="down-arrow" />
+                                        <img src="/assets/down-arrow-filled.svg" alt="down-arrow" />
                                         <div className="sdropdown-menu">
                                             <ul>
                                                 <li>
@@ -148,10 +147,10 @@ function Pools() {
                 </div>
             </div>
             <div className="poolboard">
-              <LivePools sortOption={sortOption}/>
+              <FinishedPools sortOption={sortOption}/>
             </div>
             <div className="plogo">
-                <img src="assets/3d-syrup-bunnies.png" alt="illustration" />
+                <img src="/assets/3d-syrup-bunnies.png" alt="illustration" />
             </div>
         </div>
       </div>
@@ -159,4 +158,4 @@ function Pools() {
   )
 }
 
-export default Pools
+export default PoolsHistory
