@@ -44,7 +44,7 @@ function Navbar() {
                             </div></Link></div>
                           <div><Link to="/">Trading Competition</Link></div>
                           <div><Link to="/">Prediction (BETA)</Link></div>
-                          <div><Link to="/">Lottery</Link></div>
+                          <div><Link to="/lottery">Lottery</Link></div>
                           <div><Link to="/">Pottery (BETA)</Link></div>
                         </div>
                       </div>

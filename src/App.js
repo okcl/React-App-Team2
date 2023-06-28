@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import TradingReward from './pages/TradingReward';
 import Pools from './pages/Pools/Pools';
 import PoolsHistory from './pages/Pools/History';
+import { Lottery } from './pages/Lottery/Lottery';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="trading-reward" element={<TradingReward />} />
           <Route path="/pools" element={<Pools />} />
           <Route path="/pools/history" element={<PoolsHistory />} />
+          <Route path="/lottery" element={<Lottery/>}/>
         </Routes>
       <Footer />
     </div>

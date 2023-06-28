@@ -1,6 +1,5 @@
-import TheCountUp from "./CountUp";
-import '../styles/lottery/lottery.css'
-import { SwitchingBtn } from "../pages/Lottery/SwitchingLot";
+import TheCountUp from "../../components/CountUp";
+import { SwitchingBtn } from "./SwitchingLot";
 
 export function Lottery(){
     return (
