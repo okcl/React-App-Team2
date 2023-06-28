@@ -1,8 +1,7 @@
 import { useState } from "react"
-import '../styles/lottery/Toggle.css'
 
 export function SwitchingBtn(){
-    const[style, setStyle] = useState["unclicked"]
+    const[style, setStyle] = useState("unclicked");
     const handleToggleChange=()=>{
        setStyle("clicked")
     }
