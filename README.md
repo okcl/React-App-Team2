@@ -15,8 +15,7 @@
 
 ---
 # Trello
-You need to join trello -->
-    [Our Trello Page](https://trello.com/invite/b/MO9jiL4e/ATTIf428aa9db880d6832a5e3330fc0274aeF8E5AD87/web-development)
+You need to join trello from the link at discord
 
 
 ## You choose the task that you wanted to do from to-do list and click it
