@@ -16,9 +16,20 @@
   --light-text: #7a6eaa;
   --bright-text:#7645d9;
   --disabled: #e9eaeb;
-  font-family: Kanit, sans-serif;
+  --pink: #ed4b9e;
+  --colors-input: #eeeaf4;
+  --colors-inputSecondary: #d7caec; 
+  --colors-background: #faf9fa;
 }
 
+.details{
+               text-decoration: none;
+               color: var(--blue);
+               font-style: bold;
+               border: 0px;
+               background-color: white;
+               margin: 20px;
+            }
 
 .buttom{
    background-color: var(--blue);
@@ -45,7 +56,6 @@
     grid-template-columns: auto 400px auto;
     grid-template-rows: 120px 120px 100px 200px;
     padding-bottom: 30px;
-    
 }
 
    #div1price{
@@ -126,7 +136,6 @@
 
 
     #images11{
-        border: red 1px solid;
         position: relative;
         grid-column-start: 1;
         grid-column-end: 2;
@@ -136,62 +145,71 @@
     
 
          #bigstar{
-          border: red 1px solid;
            height:120px;
            width:120px;
            position: absolute;
-           left: 10%;
-           top: 250px;
+           left: 60%;
+           top: 60%;
            animation-name: bigstar;
            animation-duration: 3s;
-           animation-delay: 0s;
+           animation-delay: 0.25s;
            animation-iteration-count: infinite;
          }
            @keyframes bigstar{
-           0%{left: 30vw; top: 250px}
-           50%{left: 29vw; top: 235px}
-           100%{left: 30vw; top: 250px}
+            0% {
+              transform: translate(0px, 0px);
+          }
+          50% {
+              transform: translate(10px, 10px);
+          }
+          100% {
+              transform: translate(0px, 0px);
+          }
           }
          
          #smallstar{
-          border: red 1px solid;
             height: 80px;
             width:80px;
             position: absolute;
-            left: 20vw;
-            top: 150px;
+            left: 73%;
+            top: 37%;
             animation-name: smallstar;
-            animation-duration: 3s;
-            animation-delay: 0s;
+            animation-duration: 3.5s;
+            animation-delay: 0.5s;
             animation-iteration-count: infinite;
           }
             @keyframes smallstar{
-            0%{left: 20vw; top: 150px}
-            50%{left: 18vw; top: 140px}
-            100%{left: 20vw; top: 150px}
+              0% {
+              transform: translate(0px, 0px);
+          }
+          50% {
+              transform: translate(10px, 10px);
+          }
+          100% {
+              transform: translate(0px, 0px);
+          }
            }
          
          #ticketl{
-          border: red 1px solid;
-            height: 100px;
-            width: 100px;
-            position: absolute;
-            left: 20vw;
-            top: 305px;
-            animation-name: ticketl;
-            animation-duration: 7s;
-            animation-delay: 0s;
-            animation-iteration-count: infinite;
+          height: 100px;
+          width: 100px;
+          position: absolute;
+          left: 75%;
+          top: 100%;
+          animation-name: ticketl;
+          animation-duration: 7s;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+
           }
             @keyframes ticketl{
-              0%{left:0vw; top: 390px}
-              50%{left: 1vw; top: 305px}
-              100%{left: 0vw; top: 390px}
+              0% {transform: translate(0px, 0px);}
+            50% {transform: translate(-10px, 15px);}
+            100% {transform: translate(0px, 0px);}
            }
 
 
        #images12{
-        border: red 1px solid;
         position: relative;
         grid-column-start: 3;
         grid-column-end: 4;
@@ -200,38 +218,36 @@
     }
 
          #threestars{
-          border: red 1px solid;
             height: 150px;
             width:150px;
             position: absolute;
-            left: 2vw;
-            top: 150px;
+            right: 65%;
+            top: 37%;
             animation-name: threestars;
             animation-duration: 4s;
-            animation-delay: 0s;
+            animation-delay: 0.75s;
             animation-iteration-count: infinite;
           }
             @keyframes threestars{
-            0%{left: 0vw; top: 140px}
-            50%{left: 1vw; top: 130px}
-            100%{left: 0vw; top: 140px}
+              0% {transform: translate(0px, 0px);}
+          50% {transform: translate(-10px, 10px);}
+          100% {transform: translate(0px, 0px);}
          }
          #ticketr{
-          border: red 1px solid;
             height: 100px;
             width:100px;
             position: absolute;
-            left: 10vw;
-            top: 380px;
+            right: 75%;
+            top: 100%;
             animation-name: ticketr;
             animation-duration: 7s;
             animation-delay: 0s;
             animation-iteration-count: infinite;
           }
             @keyframes ticketr{
-            0%{left:1vw; top: 390px}
-            50%{left: 0vw; top: 385px}
-            100%{left: 1vw; top: 390px}
+              0% {transform: translate(0px, 0px); }
+            50% {transform: translate(10px, 15px);}
+            100% {transform: translate(0px, 0px);}
            }
          
 
@@ -241,24 +257,45 @@
          display: none;
       }
       #div1{
-         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-content: center;
       }
       #divh11, #div1h12, #div1 p{
          align-self: center;
       }
     }
+    @media screen and (max-width: 850px){
+    #threestars{
+    right: 2%;
+    top: 24%;
+    }
+    #smallstart{
+      left: 9%;
+      top: 23%;
+    }
+  #bigstar{
+    left: 10%;
+  }
+  #ticketl{
+    left: 11%;
+  }
+  #ticketr{
+    right: 11%;
+  }}
 
     #div2{
-      background: linear-gradient(var(--purple), rgb(54, 4, 98));
+      background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
       color: var(--white);
-      height: 650px;
+      height: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 50px;
    }
       #div2header{
          margin-top: 70px;
-         font-size: 25px;
+         font-size:25px;
       }
         #div2linetime{
          display: flex;
@@ -268,14 +305,18 @@
         }
           #div2time{
             display: flex;
+            flex-direction: row;
             color: var(--yellow);
           }
+             #div2time h2{
+              padding-right: 5px;
+             }
       #center{
          background-color: var(--white);
          border: 1px solid var(--white);
          border-radius: 15px ;
          width: 750px;
-         height: 300px;
+         height: auto;
       }
          #text{
             background-color: var(--disabled);
@@ -285,14 +326,23 @@
             justify-content: space-between;
             height: 60px;
             align-items: center;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding:20px;
             color: var(--dark-text);
-            font-size: 110%;
+      
+         }
+            #text p{
+              font-size: 25px;
+            }
+            #draw{
+              color: var(--light-text);
+            }
+             
+         #topframe{
+          height: auto;
          }
          #centerframeel{
             color: white;
-            height: 180px;
+            height: 270px;
             display: grid;
             grid-template-columns: 200px 550px;
             grid-template-rows: 1fr 1fr;
@@ -302,20 +352,24 @@
             padding-left: 20px;
             border-bottom: grey 1px solid;
          }
+
             #pricepottext, #yourticketstext{
                color: var(--dark-text);
-               font-size: 110%;
+               font-size: 25px;
             }
             #prize{
                color: var(--purplenumber);
                font-size: 40px;
                width: 150px;
+               display: flex;
             }
             #cakeamount{
                color: var(--lightgrey);
                font-size: 15px;
                color: grey;
                width: 150px;
+               display: flex;
+               flex-direction: row;
             }
             #theprizepot{
                margin-top: 10px;
@@ -323,19 +377,28 @@
             }
             #prizepotbutton{
                width: 200px;
+               padding-bottom: 20px;
             }
          #bottomframe{
             display: flex;
             justify-content: center;
+            align-content: center;
          }
-            .details{
-               text-decoration: none;
-               color: var(--blue);
-               font-style: bold;
-               border: 0px;
-               background-color: white;
-               margin: 20px;
-            }
+             #div2details{
+              align-content: space-evenly;
+              display: grid;
+              grid-template-columns: 130px 130px 130px 130px;
+              grid-template-rows: 140px 140px;
+              align-items: start;
+             }
+                #div2details #header{
+                  grid-column-start: 1;
+                  grid-column-end: 5;
+                  grid-row-start: 0;
+                  grid-row-end: 1;
+                  color: var(--dark-text);
+                  font-size: 14px;
+                }
    
             @media screen and (max-width: 850px){
                #center{
@@ -373,7 +436,7 @@
             }
    
 #div3{
-   background: var(--lightgrey);
+   background: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
    display: flex;
    align-items: center;
    justify-content: center;
@@ -392,7 +455,7 @@
 
 #div4{
    background: linear-gradient(var(--lightestgrey), var(--purplenumber));
-   height: 1000px;
+   height: auto;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -488,17 +551,18 @@
             font-style: bold;
             width: 55px;
             height: 30px;
-            background: var(--purple2);
-            border: none;
+            background: var(--colors-input);
+            color: var(--dark-text);
+            border: 0.5px solid var(--colors-inputSecondary);
             border-radius: 20px;
             font-size: 100%;
-            color: white;
             margin: 15px;
            }
            #tabletopline2{
             font-size: small;
             font-style: bold;
             margin-left: 15px;
+            color: var(--dark-text);
            }
            #tabletoplineright{
             margin: 30px 80px;
@@ -537,12 +601,13 @@
              }
 
         #div4prizepot{   
-          background-color: var(--white);
+          background-color: var(--colors-background);
           width: 750px;
-          height: 300px;
-          border-radius: 25px;
-          border: 0px;
-          border-bottom: 2px solid var(--disabled);
+          height: auto;
+          border-bottom-left-radius: 25px;
+          border-bottom-right-radius: 25px;
+          border-top: 1px solid var(--colors-inputSecondary);
+          border-bottom: 2px solid var(--colors-inputSecondary);
           display: grid;
           grid-template-columns: 130px 130px 130px 130px;
           grid-template-rows: 140px 140px;
@@ -608,22 +673,53 @@
           grid-row-start: 2;
           grid-row-end: 3;
          }
+         #match7 h3{
+          color: var(--pink)
+         }
           .match{
-            border: red solid 1px;
+            padding-bottom: 20px;
           }
-
           .match h3{
             color: var(--bright-text);
+            font-size: 18px;
+            text-align: left;
+            display: flex;
           }
-          .match h2{
+          #prizepot1 h1{
+            color: var(--bright-text);
+          }
+          .match h2 {
             color: var(--dark-text);
             margin:0px;
-            padding: 0px;
+            text-align: left;
+            font-size: 20px;
+            display: flex;
+          }
+          #prizepot1 h4{
+            color: var(--dark-text);
+            margin:0px;
+            padding-right: 0px;
           }
           .match p{
             color: var(--lightgrey);
             font-size: 12px;
+            text-align: left;
+            display: flex;
           }
+          #prizepot1 p{
+            color: var(--lightgrey);
+            font-size: 15px;
+          }
+          #prizepot1 h2{
+            color: var(--bright-text);;
+            font-size: 35px;
+          }
+
+        #prizepot2, #prizepot3 {
+          color: var(--bright-text);
+          padding: 15px;
+          text-align: left;
+        }
      
       
    @media screen and (max-width: 839px){
@@ -689,7 +785,7 @@
      #tablebottom p{
       color: var(--light-text);
       font-size: small;
-      padding: 20px;
+
      }
      
  

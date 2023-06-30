@@ -1,9 +1,8 @@
 import CountUp from 'react-countup';
+import React from 'react';
 
-
-export default function TheCountUp(){
-return ( <div>
-    <CountUp end={44294} duration={2}/>
-    </div>
+export default function TheCountUp(props){
+return (
+<CountUp end={props.end} duration={props.duration}/>
     )
 }

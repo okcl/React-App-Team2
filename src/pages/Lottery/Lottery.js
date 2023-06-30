@@ -1,4 +1,7 @@
 import TheCountUp from "../../components/CountUp";
+import  ShowDetails  from "./ShowDetails";
+import ShowDetailsDiv2 from "./ShowDetailsDiv2";
+import { SwitchHistory } from "./SwitchHistory";
 import { SwitchingBtn } from "./SwitchingLot";
 
 export function Lottery(){
@@ -16,7 +19,7 @@ export function Lottery(){
 
            <div id="div1content">
               <h1 id="div1h11">The PancakeSwap Lottery</h1>
-              <p id="div1price">$<TheCountUp/></p>    
+              <p id="div1price">$<TheCountUp end={44294} duration={2}/></p>    
               <h1 id="div1h12">in prizes!</h1>
               <div id="buyticketsbuttom">
               <img src="assets/ticket.svg" id="backticket"/>
@@ -33,39 +36,40 @@ export function Lottery(){
         <div id="div2">
             <div id="div2header"><h2>Get your tickets now!</h2></div>
                <div id="div2linetime">
-               <div id="div2time">
-                  <h2>2</h2>
-                  <h2>h</h2>
-                  <h2>56</h2>
-                  <h2>m</h2>
-               </div>
-               <div id="div2until">   
-                  <h2>until the draw</h2>
-               </div> 
+                 <div id="div2time">
+                    <h2>2</h2>
+                    <h2>h</h2>
+                    <h2>56</h2>
+                    <h2>m</h2>
+                 </div>
+                 <br/>
+                 <div id="div2until">   
+                    <h2>until the draw</h2>
+                 </div> 
                </div>
            <div id="center">
            <div id="frame">
              <div id="topframe">
                  <div id="text">
-                     <h2>Next Draw</h2>
-                     <div>#875| Draw: Apr 21, 2023, 2:00 AM</div>
+                     <p>Next Draw</p>
+                     <div id="draw">#875| Draw: Apr 21, 2023, 2:00 AM</div>
                  </div>
              </div>
              <div id="centerframe">
                  <div id="centerframeel">
-                     <h2 id="pricepottext">Prize Pot</h2>
+                     <p id="pricepottext">Prize Pot</p>
                      <div id="theprizepot">
-                     <div id="prize"><b>~$51.244</b></div>
-                     <div id="cakeamount"><b>15,264 CAKE</b></div>
+                     <p id="prize">~$<TheCountUp end={51244} duration={1.5}/></p>
+                     <div id="cakeamount"><TheCountUp end={15264} duration={1}/> CAKE</div>
                      </div>
-                     <h2 id="yourticketstext">Your tickets</h2>
+                     <p id="yourticketstext">Your tickets</p>
                      <div id="prizepotbutton">
                          <button className="buttom"><b>Buy Tickets</b></button>
                      </div>
                  </div>
              </div>
              <div id="bottomframe">
-                 <a href="details" className="details"><b>Details</b><img src="assets/detailsarrowdown.svg"/></a>
+                 <ShowDetailsDiv2/>
              </div>
            </div>
           </div>
@@ -88,134 +92,7 @@ export function Lottery(){
              <SwitchingBtn/>
            </div>
           <div id="historyframe">
-             <div id="allhistorytable">
-                  <div id="tabletop">
-                     <div id="tabletoplineleft">
-                        <div id="tabletopline">
-                            <h2 id="round">Round</h2>
-                            <input pattern="^[0-9]+$" inputmode="numeric" id="round-id" name="round-id" scale="lg" class="sc-c22a9310-0 sc-82817dc1-0 hKHSKn lobcTU" value="877"/>
-                         </div>
-                         <div id="tabletopline2">
-                             "Drawn"
-                             "Apr 23, 2023, 2:00 AM"
-                         </div>  
-                      </div>
-                      <div id="tabletoplineright">
-                            <button className="arrow"><img src="assets/arrowleft.svg" /></button>
-                            <button className="arrow"><img src="assets/arrowright.svg" /></button>
-                            <button className="arrow"><img src="assets/arrowright2.svg" /></button>
-                     </div>
-                  </div>
-                  <div id="tablecenter">
-                         <div id="tablecentercontent">
-                             <div id="tablecentercontentline1">
-                                 <h2 id="winningnumbers">Winning Number</h2>
-                             
-                                     <div id="tablecentercontentline2">
-                                     <div id="ballswithnumbers">
-                                     <div>
-                                         <img src="assets/ball1.svg" className="ballnumber"/>
-                                     </div>
-                                     <div >
-                                         <img src="assets/ball2.svg"className="ballnumber"/>
-                                     </div>
-                                     <div >
-                                         <img src="assets/ball3.svg"className="ballnumber"/>
-                                     </div>
-                                     <div >
-                                         <img src="assets/ball4.svg"className="ballnumber"/>
-                                     </div>
-                                     <div >
-                                         <img src="assets/ball5.svg"className="ballnumber"/>
-                                     </div>
-                                     <div >
-                                         <img src="assets/ball6.svg"className="ballnumber"/>
-                                     </div>
-                                     </div>
-                                  </div>  
-                             </div>
-                         </div>
-                   </div>
-                     <div id="tablebottom">
-                         <button className="details">Details<img src="assets/detailsarrowdown.svg"/></button>
-                     </div>
-                <div id="div4prizepot">
-                    <div id="prizepot1">
-                        <h4>Prize Pot</h4>
-                        <h1>~$34 747</h1>
-                        <h5>22,761 CAKE</h5>
-                    </div>
-                    <div id="prizepot2">
-                        <p>Total players this round: 140</p>
-                    </div>
-                    <div id="prizepot3">
-                        <p>Match the winning number in the same order to share prizes.</p>
-                    </div>
-                     <div className="match" id="match1">
-                        <h3>Match first 1</h3>
-                        <h2>455 CAKE</h2>
-                        <p>~$694</p>
-                        <p>5.29 CAKE each</p>
-                        <p>86 Winning Tickets</p>
-                     </div>
-                     <div className="match" id="match2">
-                        <h3>Match first 2</h3>
-                        <h2>683 CAKE</h2>
-                        <p>~$1,042</p>
-                        <p>113.8 CAKE each</p>
-                        <p>6 Winning Tickets</p>
-                     </div>
-                     <div className="match" id="match3">
-                        <h3>Match first 3</h3>
-                        <h2>1,138 CAKE</h2>
-                        <p>~$1,735</p>
-                        <p>569.02 CAKE each</p>
-                        <p>2 Winning Tickets</p>
-                     </div>
-                     <div className="match" id="match4">
-                        <h3>Match first 4</h3>
-                        <h2>2,276 CAKE</h2>
-                        <p>~$3,474</p>
-                        <p>0 Winning Tickets</p>
-                     </div>
-                     <div className="match" id="match5">
-                        <h3>Match first 5</h3>
-                        <h2>4,552 CAKE</h2>
-                        <p>~$6,947</p>
-                        <p>0 Winning Tickets</p>
-                     </div>
-                     <div className="match" id="match6">
-                        <h3>Match first 6</h3>
-                        <h2>9,104 CAKE</h2>
-                        <p>~$13,894</p>
-                        <p>0 Winning Tickets</p>
-                     </div>
-                     <div className="match" id="match7">
-                        <h3>Burn</h3>
-                        <h2>4,552 CAKE</h2>
-                        <p>~$6,947</p>
-                     </div>
-                </div>
-            </div>
-    
-             <div id="yourhistorytable">
-                  <div id="yourtabletop">
-                     <div id="yourtabletoplineleft">
-                        <div id="yourtabletopline">
-                            <h2 id="rounds">Rounds</h2>
-                        </div>
-                     </div>
-                   </div>
-                   <div id="yourtablecenter">
-                         <div id="yourtablecentercontent">
-                                 <p>Connect your wallet to check your history</p>
-                                 <button className="buttom">Connect Wallet</button>
-                         </div>
-                   </div>
-                 <div id="tablebottom">
-                         <p>Only showing data for Lottery V2</p>
-                     </div>
-             </div>
+            <SwitchHistory/>
           </div>
           </div>
         </div>
