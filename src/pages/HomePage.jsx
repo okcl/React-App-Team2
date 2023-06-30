@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TheCountUp from "../components/CountUp";
 
 function HomePage() {
     return(
@@ -212,7 +213,7 @@ function HomePage() {
                                             <div className="fgbox-top">unshETH-USDT LP v3</div>
                                             <div className="fgbox-mid">
                                                 <div className="fgbox-mid-wrap">
-                                                    <span><b>4,745.376%</b></span>
+                                                    <span><b><TheCountUp end={4745.376} duration={5}/>%</b></span>
                                                 </div>
                                             </div>
                                             <div className="fgbox-bot">APR</div>
@@ -224,7 +225,7 @@ function HomePage() {
                                             <div className="fgbox-top">PSTAKE-CAKE LP v3</div>
                                             <div className="fgbox-mid">
                                                 <div className="fgbox-mid-wrap">
-                                                    <span><b>1,107.765%</b></span>
+                                                    <span><b><TheCountUp end={1107.765} duration={5}/>%</b></span>
                                                 </div>
                                             </div>
                                             <div className="fgbox-bot">APR</div>
@@ -236,7 +237,7 @@ function HomePage() {
                                             <div className="fgbox-top">stkBNB-BNB LP v3</div>
                                             <div className="fgbox-mid">
                                                 <div className="fgbox-mid-wrap">
-                                                    <span><b>529.521%</b></span>
+                                                    <span><b><TheCountUp end={529.521} duration={5}/>%</b></span>
                                                 </div>
                                             </div>
                                             <div className="fgbox-bot">APR</div>
@@ -248,7 +249,7 @@ function HomePage() {
                                             <div className="fgbox-top">unshETH-USH LP v3</div>
                                             <div className="fgbox-mid">
                                                 <div className="fgbox-mid-wrap">
-                                                    <span><b>237.578%</b></span>
+                                                    <span><b><TheCountUp end={237.578} duration={5}/>%</b></span>
                                                 </div>
                                             </div>
                                             <div className="fgbox-bot">APR</div>
@@ -260,7 +261,7 @@ function HomePage() {
                                             <div className="fgbox-top">MGP-BNB LP v3</div>
                                             <div className="fgbox-mid">
                                                 <div className="fgbox-mid-wrap">
-                                                    <span><b>197.588%</b></span>
+                                                    <span><b><TheCountUp end={197.588} duration={5}/>%</b></span>
                                                 </div>
                                             </div>
                                             <div className="fgbox-bot">APR</div>
@@ -351,7 +352,7 @@ function HomePage() {
                                             </div>
                                             <div className="card-right-content">
                                                 <div>Lottery</div>
-                                                <div><span>$68,026</span></div>
+                                                <div><span>$<TheCountUp end={68026} duration={5}/></span></div>
                                                 <div>in CAKE prizes this round</div>
                                                 <div>Buy tickets with CAKE, win CAKE if your numbers match</div>
                                                 <div className="card-right-button">
@@ -403,27 +404,27 @@ function HomePage() {
                 <div className="data">
                     <div id="data-block-1" className="data-block">
                         <p>Circulating Supply</p>
-                        <h3>187,394,871</h3>
+                        <h3><TheCountUp end={187394871} duration={5}/></h3>
                     </div>
                     <div id="data-block-2" className="data-block">
                         <p>Market cap</p>
-                        <h3>$680 million</h3>
+                        <h3>$<TheCountUp end={680} duration={5}/> million</h3>
                     </div>
                     <div id="data-block-3" className="data-block">
                         <p>Total supply</p>
-                        <h3>383,780,561</h3>
+                        <h3><TheCountUp end={383780561} duration={5}/></h3>
                     </div>
                     <div id="data-block-4" className="data-block">
                         <p>Burned to date</p>
-                        <h3>780,090,834</h3>
+                        <h3><TheCountUp end={780090834} duration={5}/></h3>
                     </div>
                     <div id="data-block-5" className="data-block">
                         <p>Max Supply</p>
-                        <h3>750,000,000</h3>
+                        <h3><TheCountUp end={750000000} duration={5}/></h3>
                     </div>
                     <div id="data-block-6" className="data-block">
                         <p>Current emissions</p>
-                        <h3>9.9/block</h3>
+                        <h3><TheCountUp end={9.9} duration={5}/>/block</h3>
                     </div>
                 </div>
             </section>
