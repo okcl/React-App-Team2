@@ -1,3 +1,6 @@
+import CountUp from 'react-countup';
+
+
 const Row = ({ imgSrc, name, earned, totalStaked, apr, ending}) => {
     return(
         <div className="row">
@@ -16,7 +19,7 @@ const Row = ({ imgSrc, name, earned, totalStaked, apr, ending}) => {
                 <div className="header">{name} Earned</div>
                 <div className="headerDesc">
                   <div className="subMainDesc">0.0</div>
-                  <div className="subDesc">{earned} USD</div>
+                  <div className="subDesc"><CountUp end={earned} duration={2}/> USD</div>
                 </div>
               </div>
             </div>
@@ -24,7 +27,7 @@ const Row = ({ imgSrc, name, earned, totalStaked, apr, ending}) => {
               <div className="desc">
                 <div className="header">Total staked</div>
                 <div className="headerDesc">
-                  <div className="subMainDesc">{addCommasToNumber(totalStaked)} CAKE</div>
+                  <div className="subMainDesc"><CountUp end={totalStaked} duration={1.5}/> CAKE</div>
                 </div>
               </div>
             </div>
@@ -32,7 +35,7 @@ const Row = ({ imgSrc, name, earned, totalStaked, apr, ending}) => {
               <div className="desc">
                 <div className="header">APR</div>
                 <div className="headerDesc">
-                  <div className="subMainDesc">{apr}%</div>
+                  <div className="subMainDesc"><CountUp end={apr} duration={1.5} decimals={2}/>%</div>
                   <img src="assets/calculator.svg" className="descImg" alt="" />
                 </div>
               </div>
@@ -41,7 +44,7 @@ const Row = ({ imgSrc, name, earned, totalStaked, apr, ending}) => {
               <div className="desc">
                 <div className="header">Ends in</div>
                 <div className="headerDesc">
-                  <div className="header" style={{fontSize: 14}}>{ending} days</div>
+                  <div className="header" style={{fontSize: 14}}><CountUp end={ending} duration={1.5}/> days</div>
                   <img src="assets/timer-blue.svg" className="descImg" alt="" width="20px" />
                 </div>
               </div>
@@ -56,20 +59,6 @@ const Row = ({ imgSrc, name, earned, totalStaked, apr, ending}) => {
             </div>
         </div>
     )
-    function addCommasToNumber(number) {
-        let str = number.toString();
-        let chars = str.split("");
-        chars.reverse();
-        
-        for (let i = 3; i < chars.length; i += 4) {
-          chars.splice(i, 0, ",");
-        }
-        
-        chars.reverse();
-        str = chars.join("");
-        
-        return str;
-    }
 };
 
 export default Row
