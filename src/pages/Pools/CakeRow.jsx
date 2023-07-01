@@ -1,3 +1,5 @@
+import CountUp from "react-countup"
+
 function CakeRow(){
     return(
         <div className="row">
@@ -24,7 +26,7 @@ function CakeRow(){
               <div className="desc">
                 <div className="header">Flexible APY</div>
                 <div className="headerDesc">
-                  <div className="subMainDesc">0.85%</div>
+                  <div className="subMainDesc"><CountUp end={0.85} duration={1.5} decimals={2}/>%</div>
                   <img src="assets/calculator.svg" className="descImg" alt="" />
                 </div>
               </div>
@@ -33,7 +35,7 @@ function CakeRow(){
               <div className="desc">
                 <div className="header">Locked APR</div>
                 <div className="headerDesc">
-                  <div className="subMainDesc">Up to 18.22%</div>
+                  <div className="subMainDesc">Up to <CountUp end={18.22} duration={1.5} decimals={2}/>%</div>
                   <img src="assets/calculator.svg" className="descImg" alt="" />
                 </div>
               </div>
@@ -42,7 +44,7 @@ function CakeRow(){
               <div className="desc">
                 <div className="header">Total staked</div>
                 <div className="headerDesc">
-                  <div className="subMainDesc">229,069,913 CAKE</div>
+                  <div className="subMainDesc"><CountUp end={229069913} duration={2}/> CAKE</div>
                 </div>
               </div>
             </div>

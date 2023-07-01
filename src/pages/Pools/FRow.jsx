@@ -1,3 +1,5 @@
+import CountUp from "react-countup";
+
 const SRow = ({ imgSrc, name, earned, totalStaked, apr, ending}) => {
     return(
         <div className="row">
@@ -24,7 +26,7 @@ const SRow = ({ imgSrc, name, earned, totalStaked, apr, ending}) => {
               <div className="desc">
                 <div className="header">Total staked</div>
                 <div className="headerDesc">
-                  <div className="subMainDesc">{addCommasToNumber(totalStaked)} CAKE</div>
+                  <div className="subMainDesc"><CountUp end={totalStaked} duration={1.5}/> CAKE</div>
                 </div>
               </div>
             </div>
@@ -54,20 +56,6 @@ const SRow = ({ imgSrc, name, earned, totalStaked, apr, ending}) => {
             </div>
         </div>
     )
-    function addCommasToNumber(number) {
-        let str = number.toString();
-        let chars = str.split("");
-        chars.reverse();
-        
-        for (let i = 3; i < chars.length; i += 4) {
-          chars.splice(i, 0, ",");
-        }
-        
-        chars.reverse();
-        str = chars.join("");
-        
-        return str;
-    }
 };
 
 export default SRow
