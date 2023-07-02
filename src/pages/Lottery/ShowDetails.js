@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import { DetailsDiv4 } from './DetailsDiv4';
 
 export default function ShowDetails() {
@@ -9,8 +9,7 @@ export default function ShowDetails() {
   const handleClick = () => {
     setIsShown(current => !current);
     setActive(!active);
-  }
-      
+  } 
 
   return ( 
     <div>
