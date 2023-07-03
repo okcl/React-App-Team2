@@ -50,7 +50,7 @@ const SRow = ({ imgSrc, name, earned, totalStaked, apr, ending}) => {
               <div className="desc">
                 <div className="header">Details</div>
                 <div className="headerDesc">
-                  <img src="assets/down-arrow-blue.svg" alt="" />
+                  <img src="/assets/down-arrow-blue.svg" alt="" />
                 </div>
               </div>
             </div>
