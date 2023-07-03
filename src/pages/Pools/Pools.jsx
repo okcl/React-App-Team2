@@ -2,17 +2,70 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LivePools from "./LivePools";
 import { useState } from "react";
-import FinishedPools from "./FinishedPools";
+
+
 
 
 
 function Pools() {
+    const [sortOption, setSortOption] = useState("hot");
 
-  const [sortOption, setSortOption] = useState("hot");
+    const handleSort = (option) => {
+      setSortOption(option);
+    };
 
-  const handleSort = (option) => {
-    setSortOption(option);
-  };
+    function SortDropdown(props) {
+
+        const [open, setOpen] = useState(false);
+
+        const sortOptionText = {
+            hot: "Hot",
+            stake: "Total Staked",
+            apr: "APR",
+            earned: "Earned",
+            latest: "Latest"
+          };
+
+        return(
+            <li className="sort">
+                <div className="sselected">
+                    <div className="sbox">
+                        <div onClick={() => setOpen(!open)} className="stext">
+                            {sortOptionText[sortOption]}
+                        </div>
+                        <img src="assets//down-arrow-filled.svg" alt="down-arrow" />
+                        {open && <SortDropdownMenu />}
+                    </div>
+                </div>
+            </li>
+        )
+    }
+
+    function SortDropdownMenu(){
+
+
+        return(
+            <div className="sdropdown-menu">
+            <ul>
+                <li>
+                    <div color="text" fontSize="16px" className="s-dropdown-item" onClick={() => handleSort("apr")}>APR</div>
+                </li>
+                <li>
+                    <div color="text" fontSize="16px" className="s-dropdown-item" onClick={() => handleSort("earned")}>Earned</div>
+                </li>
+                <li>
+                    <div color="text" fontSize="16px" className="s-dropdown-item" onClick={() => handleSort("stake")}>Total Staked</div>
+                </li>
+                <li>
+                    <div color="text" fontSize="16px" className="s-dropdown-item" onClick={() => handleSort("latest")}>Latest</div>
+                </li>
+                <li>
+                    <div color="text" fontSize="16px" className="s-dropdown-item" onClick={() => handleSort("hot")}>Hot</div>
+                </li>
+            </ul>
+        </div>
+        )
+    }
 
 
 
@@ -111,32 +164,7 @@ function Pools() {
                             <div className="sort-text">
                                 Sort by
                             </div>
-                            <div className="sort">
-                                <div className="sselected">
-                                    <div className="sbox">
-                                        <div className="stext">
-                                            Hot
-                                        </div>
-                                        <img src="assets//down-arrow-filled.svg" alt="down-arrow" />
-                                        <div className="sdropdown-menu">
-                                            <ul>
-                                                <li>
-                                                    <div color="text" fontSize="16px" className="s-dropdown-item">APR</div>
-                                                </li>
-                                                <li>
-                                                    <div color="text" fontSize="16px" className="s-dropdown-item">Earned</div>
-                                                </li>
-                                                <li>
-                                                    <div color="text" fontSize="16px" className="s-dropdown-item">Total Staked</div>
-                                                </li>
-                                                <li>
-                                                    <div color="text" fontSize="16px" className="s-dropdown-item">Latest</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <SortDropdown />
                         </div>
                         <div className="search-wrap">
                             <div className="search-text">Search</div>

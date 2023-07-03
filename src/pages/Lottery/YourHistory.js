@@ -16,7 +16,7 @@ export function YourHistoryTable(){
                    </div>
                  <div id="tablebottom">
                          <p>Only showing data for Lottery V2</p>
-                     </div>
+                 </div>
              </div>
     )
 }

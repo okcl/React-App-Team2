@@ -15,9 +15,9 @@ export function AllHistory(){
                </div>  
             </div>
             <div id="tabletoplineright">
-                  <button className="arrow"><img src="assets/arrowleft.svg" /></button>
-                  <button className="arrow"><img src="assets/arrowright.svg" /></button>
-                  <button className="arrow"><img src="assets/arrowright2.svg" /></button>
+                  <button className="arrow"><img src="assets/arrowleft.svg" alt=" "/></button>
+                  <button className="arrow"><img src="assets/arrowright.svg" alt=" "/></button>
+                  <button className="arrow"><img src="assets/arrowright2.svg" alt=" "/></button>
            </div>
         </div>
         <div id="tablecenter">
@@ -28,22 +28,22 @@ export function AllHistory(){
                            <div id="tablecentercontentline2">
                            <div id="ballswithnumbers">
                            <div>
-                               <img src="assets/ball1.svg" className="ballnumber"/>
+                               <img src="assets/ball1.svg" className="ballnumber" alt=""/>
                            </div>
                            <div >
-                               <img src="assets/ball2.svg"className="ballnumber"/>
+                               <img src="assets/ball2.svg"className="ballnumber" alt=""/>
                            </div>
                            <div >
-                               <img src="assets/ball3.svg"className="ballnumber"/>
+                               <img src="assets/ball3.svg"className="ballnumber" alt=""/>
                            </div>
                            <div >
-                               <img src="assets/ball4.svg"className="ballnumber"/>
+                               <img src="assets/ball4.svg"className="ballnumber" alt=""/>
                            </div>
                            <div >
-                               <img src="assets/ball5.svg"className="ballnumber"/>
+                               <img src="assets/ball5.svg"className="ballnumber" alt=""/>
                            </div>
                            <div >
-                               <img src="assets/ball6.svg"className="ballnumber"/>
+                               <img src="assets/ball6.svg"className="ballnumber" alt=""/>
                            </div>
                            </div>
                         </div>  
