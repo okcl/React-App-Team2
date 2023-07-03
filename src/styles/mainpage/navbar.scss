@@ -62,6 +62,26 @@
                 }
               }
             }
+            .lotteryLinkActivated {
+              color: var(--colors-secondary);
+              font-weight:  600;
+
+
+
+            }
+            .lotteryLink {
+              a {
+                div {
+                  color: var(--colors-failure);
+                  border: solid 2px var(--colors-failure);
+                  border-radius: 25px;
+                  padding: 0 5px;
+                  line-height: 1.2;
+                  font-size: 15px;
+                  font-weight: 400;
+                }
+              }
+            }
           }
         }
         .nav-extra {
