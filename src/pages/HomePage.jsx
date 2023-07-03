@@ -21,14 +21,9 @@ function HomePage() {
                                         </svg>
                                     </button>
                                 </a> 
-
                             </div>
-
                             <span className="half-coin-span1 slide-1">
-
                                     <img src="https://pancakeswap.finance/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fv3BgCoinDown.45ce8443.png&w=256&q=75" alt="half-coin" className="half-coin" />
-
-
                             </span>
                         </div>
                         <div className="swiper-body-2 slide-2">
@@ -49,14 +44,9 @@ function HomePage() {
                                     <img src="/assets/perpetual.webp" alt="PerpetualBanner"/>
                                     <img src="/assets/perpetualMobile.webp" alt="PerpetualBannerMobile"/>
                                 </span>
-
                             </div>
-
-
                         </div>
-
                     </div>
-
 
                     <div id="homepage-hero" >
                         <div id="homepage-hero-left">
@@ -66,8 +56,6 @@ function HomePage() {
                                 <button id="connect-wallet-button" type="button">Connect Wallet</button>
                                 <button id="trade-now-button" type="button">Trade Now</button>
                             </div>
-
-
                         </div>
                         <div id="homepage-hero-right">
                             <div className="homepage-hero-right">
@@ -77,19 +65,12 @@ function HomePage() {
                                     <img src="/assets/star-r@2x.webp" alt="fading-star-bot-right"/>
                                     <img src="/assets/fading-star-bot-left.webp" alt=""/>
                                 </div>
-
                             </div>
                             <div className="homepage-hero-right-fading-little-star">
-
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
-
-
             </section>
 
             <section id="part-2">
@@ -256,7 +237,6 @@ function HomePage() {
                                         </div>
                                     </div>
                                     <div className="farmsg">
-
                                         <div className="farmsg-boxb">
                                             <div className="fgbox-top">MGP-BNB LP v3</div>
                                             <div className="fgbox-mid">
@@ -278,7 +258,6 @@ function HomePage() {
                 <div className="main-part-6">
                     <div className="background-images-part-6">
                         <div className="lower-corner">
-
                             <div>
                                 <img className="card-cake" src="/assets/card-cake.webp" alt="cake card"/>
                             </div>
@@ -291,10 +270,8 @@ function HomePage() {
                             <div>
                                 <img className="card-cake-2" src="/assets/card-cake-2.webp" alt="cake card 2"/>
                             </div>
-
                         </div>
                         <div className="upper-corner">
-
                             <div>
                                 <img className="ball-2" src="/assets/ball-2.webp" alt="ball-2"/>
                             </div>
@@ -310,7 +287,6 @@ function HomePage() {
                             <div>
                                 <img className="ball-9" src="/assets/ball-9.webp" alt="ball-9"/>
                             </div>
-
                         </div>
                         <div className="part-6-banner">
                             <h2><span>Win</span> millions in prizes</h2>
@@ -372,7 +348,6 @@ function HomePage() {
                     </div>
                 </div>
             </section>
-
 
             <section id="part-7">
                 <div className="main-content">
@@ -470,7 +445,6 @@ function HomePage() {
                     </div>
                 </div>
             </section>
-
         </div>
     )
 }
