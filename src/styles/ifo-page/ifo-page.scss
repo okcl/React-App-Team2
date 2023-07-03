@@ -125,7 +125,7 @@
 
             .info-page {
                 width: 100%;
-                background-image: url(public/assets/ifo-banner-light.png);
+                background-image: url(../../../public/assets/ifo-banner-light.png);
                 background-position: center top, center center;
                 background-size: auto 100%;
                 background-repeat: no-repeat;
@@ -153,7 +153,7 @@
                         align-items: flex-end;
                         font-size: 0.8rem;
                         line-height: 1.5;
-                        
+
                         a {
                             box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
                             font-size: 1rem;
@@ -272,7 +272,7 @@
                                 font-size: 1rem;
                             }
 
-                            
+
                         }
                     }
                 }
@@ -320,7 +320,7 @@
                         border-radius: 16px;
                         padding: 0 0.5rem;
                     }
-                
+
                 }
             }
 
@@ -358,7 +358,7 @@
                             align-items: center;
                             gap: 0.25rem;
                             color: var(--colors-primary);
-                            
+
                             img {
                                 width: 14px;
                             }
@@ -370,7 +370,7 @@
                 }
             }
         }
-        
+
         .coming-soon {
             grid-area: coming;
             background: var(--colors-cardBorder);
@@ -378,7 +378,7 @@
             height: fit-content;
 
             .box-header {
-                background-image: url(/assets/ifo-coming-soon-desktop.png);
+                background-image: url(../../../public/assets/ifo-coming-soon-desktop.png);
                 border-top-left-radius: 24px;
                 border-top-right-radius: 24px;
                 border-bottom-left-radius: 100% 40px;
@@ -395,7 +395,7 @@
                 padding: 1.5rem;
                 gap: 32px;
                 border-radius: 24px;
-                
+
                 & > div {
                     max-width: 368px;
 
@@ -477,7 +477,7 @@
                     font-size: 1rem;
                     color: var(--colors-text);
                 }
-                
+
                 img {
                     width: 80px;
                     height: 80px;
@@ -534,7 +534,7 @@
 
                 &.two,
                 &.four {
-                    grid-template-areas: 
+                    grid-template-areas:
                     "description step .";
                 }
 
@@ -548,14 +548,14 @@
                     align-items: center;
 
                     .step-line {
-                        width: 4px; 
+                        width: 4px;
                         height: calc(50% + 20px);
                         background-color: var(--colors-textDisabled);
                         position: absolute;
                         top: 0;
                         left: calc(50% - 2px);
 
-                        &.activated {  
+                        &.activated {
                             top: 50%;
                             background-color: var(--colors-success);
                         }

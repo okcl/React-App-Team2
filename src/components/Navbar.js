@@ -64,7 +64,7 @@ function Navbar() {
                           </div>
                           <div className="down-menu">
                               <div><Link to="/">Info</Link></div>
-                              <div><Link to="/">IFO</Link></div>
+                              <div><Link to="/ifo">IFO</Link></div>
                               <div><Link to="/">Affiliate Program</Link></div>
                               <div><Link to="/">Voting</Link></div>
                               <div><Link to="/">Leaderboard</Link></div>
