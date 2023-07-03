@@ -17,7 +17,7 @@ function Pools() {
 
 
   return(
-    <div className="pools">  
+    <div className="pools">
           <button onClick={() => handleSort("stake")}>Stake</button>
           <button onClick={() => handleSort("hot")}>Hot</button>
           <button onClick={() => handleSort("apr")}>APR</button>
