@@ -96,7 +96,7 @@ export function Lottery(){
            <div id="tabletoplineleft">
               <div id="tabletopline">
                   <h2 id="round">Round</h2>
-                  <input pattern="^[0-9]+$" inputmode="numeric" id="round-id" name="round-id" scale="lg" className="sc-c22a9310-0 sc-82817dc1-0 hKHSKn lobcTU" value="877"/>
+                  <input pattern="^[0-9]+$" inputMode="numeric" id="round-id" name="round-id" scale="lg" className="sc-c22a9310-0 sc-82817dc1-0 hKHSKn lobcTU" value="877"/>
                </div>
                <div id="tabletopline2">
                    "Drawn"
