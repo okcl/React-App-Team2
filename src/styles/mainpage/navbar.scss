@@ -1,3 +1,144 @@
+.nav {
+  nav{
+    .nav1 {
+      .nav-menu {
+        .nav-win {
+          .link{
+            display: flex;
+            align-items: center;
+          }
+          #winLinkActivated a{
+            color: var(--colors-secondary);
+            font-weight: 600;
+          }
+          #winLinkActivated{
+            ::after{
+            content: "";
+            background: var(--colors-failure);
+            height: 8px;
+            width: 8px;
+            border-radius: 100%;
+            margin-left: 12px;
+            }
+          }
+
+          #winLink{
+            ::after{
+            content: "";
+            background: var(--colors-failure);
+            height: 8px;
+            width: 8px;
+            border-radius: 100%;
+            margin-left: 12px;
+            }
+          }
+          .down-menu {
+            .tradingRewardLinkActivated {
+                a {
+                    color: var(--colors-secondary);
+                    font-weight:  600;
+                    div {
+                        color: var(--colors-failure);
+                        border: solid 2px var(--colors-failure);
+                        border-radius: 25px;
+                        padding: 0 5px;
+                        line-height: 1.2;
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                }
+
+            }
+            .tradingRewardLink {
+              a {
+                div {
+                  color: var(--colors-failure);
+                  border: solid 2px var(--colors-failure);
+                  border-radius: 25px;
+                  padding: 0 5px;
+                  line-height: 1.2;
+                  font-size: 15px;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+        .nav-extra {
+          .link{
+            display: flex;
+            align-items: center;
+          }
+          #navExtraActivated svg {
+                align-self: center;
+                fill: var(--colors-secondary);
+                color: var(--colors-secondary);
+                flex-shrink: 0;
+          }
+          #navExtraActivated{
+            ::after{
+            content: "";
+            background: var(--colors-primary);
+            height: 8px;
+            width: 8px;
+            border-radius: 100%;
+            margin-left: 12px;
+            }
+          }
+
+          #navExtra svg {
+            align-self: center;
+            fill: var(--colors-textSubtle);
+            color: var(--colors-textSubtle);
+            flex-shrink: 0;
+          }
+          #navExtra{
+            ::after{
+            content: "";
+            background: var(--colors-primary);
+            height: 8px;
+            width: 8px;
+            border-radius: 100%;
+            margin-left: 12px;
+            }
+          }
+.down-menu {
+            .IFOLinkActivated {
+                a {
+                    color: var(--colors-secondary);
+                    font-weight:  600;
+                    div {
+                        color: var(--colors-failure);
+                        border: solid 2px var(--colors-failure);
+                        border-radius: 25px;
+                        padding: 0 5px;
+                        line-height: 1.2;
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                }
+
+            }
+            .IFOLink {
+              a {
+                div {
+                  color: var(--colors-failure);
+                  border: solid 2px var(--colors-failure);
+                  border-radius: 25px;
+                  padding: 0 5px;
+                  line-height: 1.2;
+                  font-size: 15px;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .logo-mobile{
     display:none;
 }
@@ -77,6 +218,8 @@ nav a{
   background: var(--colors-tertiary);
   border-radius: 16px;
 }
+
+
 
 .down-menu{
   position: absolute;
@@ -186,7 +329,7 @@ nav a{
 }
 
 .nav-lang {
-  position: relative;  
+  position: relative;
   &:hover .lang-down-menu{
     display:flex;
     opacity: 1;
@@ -660,7 +803,7 @@ color: var(--colors-invertedContrast);
         visibility: visible;
         pointer-events: auto;
       }
-      
+
     }
   }
   @media screen and (min-width: 576px) {
