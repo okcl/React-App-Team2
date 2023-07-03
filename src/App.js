@@ -7,6 +7,7 @@ import TradingReward from './pages/Trading-reward/TradingReward';
 import Pools from './pages/Pools/Pools';
 import PoolsHistory from './pages/Pools/History';
 import { Lottery } from './pages/Lottery/Lottery';
+import IFO from './pages/IFO/IFO'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/pools" element={<Pools />} />
           <Route path="/pools/history" element={<PoolsHistory />} />
           <Route path="/lottery" element={<Lottery/>}/>
+          <Route path='/ifo' element={<IFO/>}/>
         </Routes>
       <Footer />
     </div>
