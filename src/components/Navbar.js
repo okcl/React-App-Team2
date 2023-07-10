@@ -7,6 +7,7 @@ function Navbar() {
     const tradingRewardLocation = location.pathname === '/trading-reward'
     const IFOLocation = location.pathname === '/ifo'
     const lotteryLocation = location.pathname === '/lottery'
+    const poolsLocation = location.pathname === '/pools'
   return (
     <div>
       <header className="nav">
@@ -31,14 +32,14 @@ function Navbar() {
                           </div>
                       </div>
                       <div className="nav-earn">
-                        <div className="link"><Link to="/">Earn</Link></div>
+                        <div id={poolsLocation ? "earnLinkActivated" : "earnLink"}className="link"><Link to="/">Earn</Link></div>
                         <div className="down-menu">
                           <div><Link to="/">Farms</Link></div>
-                          <div><Link to="pools">Pools</Link></div>
+                          <div className={poolsLocation ? "poolsLinkActivated" : "poolsLink"}><Link to="pools">Pools</Link></div>
                         </div>
                       </div>
                       <div className="nav-win">
-                        <div id={tradingRewardLocation ? "winLinkActivated" : "winLink"} className="link"><Link to="/">Win</Link></div>
+                        <div id={tradingRewardLocation ||lotteryLocation ? "winLinkActivated" : "winLink"} className="link"><Link to="/">Win</Link></div>
                         <div className="down-menu">
                           <div className={tradingRewardLocation ? "tradingRewardLinkActivated" : "tradingRewardLink"}><Link to="/trading-reward">Trading Reward
                           <div>
@@ -46,7 +47,7 @@ function Navbar() {
                             </div></Link></div>
                           <div><Link to="/">Trading Competition</Link></div>
                           <div><Link to="/">Prediction (BETA)</Link></div>
-                          <div id={lotteryLocation ? "lotteryLinkActivated" : "lotteryLink"}><Link to="/lottery">Lottery</Link></div>
+                          <div className={lotteryLocation ? "lotteryLinkActivated" : "lotteryLink"}><Link to="/lottery">Lottery</Link></div>
                           <div><Link to="/">Pottery (BETA)</Link></div>
                         </div>
                       </div>
