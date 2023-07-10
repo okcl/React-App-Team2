@@ -15,23 +15,23 @@ export function Lottery(){
              <img src="assets/ticket-l.png" className="images1" id="ticketl" alt=""/>
            </div>
 
-          
+
 
            <div id="div1content">
               <h1 id="div1h11">The PancakeSwap Lottery</h1>
-              <p id="div1price">$<TheCountUp end={44294} duration={2}/></p>    
+              <p id="div1price">$<TheCountUp end={44294} duration={2}/></p>
               <h1 id="div1h12">in prizes!</h1>
               <div id="buyticketsbuttom">
               <img src="assets/ticket.svg" id="backticket" alt=""/>
               <button className="buttom" id="buyticketsbuttom1">Buy tickets</button>
-              </div> 
+              </div>
                </div>
 
            <div id="images12">
              <img src="assets/three-stars.png" className="images1" id="threestars" alt=""/>
              <img src="assets/ticket-r.png" className="images1" id="ticketr" alt=""/>
            </div>
-          
+
         </div>
         <div id="div2">
             <div id="div2header"><h2>Get your tickets now!</h2></div>
@@ -43,9 +43,9 @@ export function Lottery(){
                     <h2>m</h2>
                  </div>
                  <br/>
-                 <div id="div2until">   
+                 <div id="div2until">
                     <h2>until the draw</h2>
-                 </div> 
+                 </div>
                </div>
            <div id="center">
            <div id="frame">
@@ -75,13 +75,14 @@ export function Lottery(){
           </div>
         </div>
         <div id="div3">
-            <img src="assets/ticket-l.png" id="div3leftticket" class="div3img" alt=""/>
+            <img src="assets/ticket-l.png" id="div3leftticket" className="div3img"/>
+
             <div id="div3content">
               <h2 className="textdiv3">Connect your wallet</h2>
               <h2 className="textdiv3">to check if you've won!</h2>
               <button className="buttom"><b>Connect wallet</b></button>
             </div>
-            <img src="assets/ticket-r.png" id="div3rightticket" class="div3img" alt=""/>
+            <img src="assets/ticket-r.png" id="div3rightticket" className="div3img"/>
         </div>
         <div id="div4">
           <div id="div4content">
@@ -96,12 +97,12 @@ export function Lottery(){
            <div id="tabletoplineleft">
               <div id="tabletopline">
                   <h2 id="round">Round</h2>
-                  <input pattern="^[0-9]+$" inputmode="numeric" id="round-id" name="round-id" scale="lg" class="sc-c22a9310-0 sc-82817dc1-0 hKHSKn lobcTU" value="877"/>
+                  <input pattern="^[0-9]+$" inputMode="numeric" id="round-id" name="round-id" scale="lg" className="sc-c22a9310-0 sc-82817dc1-0 hKHSKn lobcTU" value="877"/>
                </div>
                <div id="tabletopline2">
                    "Drawn"
                    "Apr 23, 2023, 2:00 AM"
-               </div>  
+               </div>
             </div>
             <div id="tabletoplineright">
                   <button className="arrow"><img src="assets/arrowleft.svg" alt=""/></button>
@@ -113,7 +114,7 @@ export function Lottery(){
                <div id="tablecentercontent">
                    <div id="tablecentercontentline1">
                        <h2 id="winningnumbers">Winning Number</h2>
-                   
+
                            <div id="tablecentercontentline2">
                            <div id="ballswithnumbers">
                            <div>
@@ -135,7 +136,7 @@ export function Lottery(){
                                <img src="assets/ball6.svg"className="ballnumber" alt=""/>
                            </div>
                            </div>
-                        </div>  
+                        </div>
                    </div>
                </div>
          </div>
@@ -154,7 +155,7 @@ export function Lottery(){
                 <h2 className="div5h2"><b>How to play</b></h2>
                 <p className="div5p"><b>If the digits on your tickets match the winning numbers in the correct order, you win a portion of the prize pool.</b></p>
                 <p className="div5p"><b>Simple!</b></p>
-             </div> 
+             </div>
              <div id="div5cards">
               <div id="div5card1">
                  <div className="div5line1">
@@ -254,11 +255,11 @@ export function Lottery(){
                  </ul>
              </div>
              <div className="div5textheader2">
-                 <h2><div class="div5textheader2"><b>CAKE Injections</b></div></h2>
+                 <h2><div className="div5textheader2"><b>CAKE Injections</b></div></h2>
              </div>
              <div className="div5p2">
                  <ul>
-                     <li><b>An average total of 35,000 CAKE from the treasury is added to lottery rounds over the course of a week. This CAKE is of course also included in rollovers! Read more in our guide to <a href="cake tokenomics" class="div5link">CAKE Tokenomics</a></b></li>
+                     <li><b>An average total of 35,000 CAKE from the treasury is added to lottery rounds over the course of a week. This CAKE is of course also included in rollovers! Read more in our guide to <a href="cake tokenomics" className="div5link">CAKE Tokenomics</a></b></li>
                  </ul>
              </div>Name
              </div>
@@ -268,15 +269,15 @@ export function Lottery(){
                  </div>
                  <div id="t2raw2">
                      <div id="column1">
-                      <h5 class="columnheader"><b>DIGITS MATCHED</b></h5>
+                      <h5 className="columnheader"><b>DIGITS MATCHED</b></h5>
                          <ul>
-                             <li className="column1li"><div class="circle" id="c1"></div>Matches first 1</li>
-                             <li className="column1li"><div class="circle" id="c2"></div>Matches first 2</li>
-                             <li className="column1li"><div class="circle" id="c3"></div>Matches first 3</li>
-                             <li className="column1li"><div class="circle" id="c4"></div>Matches first 4</li>
-                             <li className="column1li"><div class="circle" id="c5"></div>Matches first 5</li>
-                             <li className="column1li"><div class="circle" id="c6"></div>Matches all 6</li>
-                             <li className="column1li"><div class="circle" id="c7"></div>Burn pool</li>
+                             <li className="column1li"><div className="circle" id="c1"></div>Matches first 1</li>
+                             <li className="column1li"><div className="circle" id="c2"></div>Matches first 2</li>
+                             <li className="column1li"><div className="circle" id="c3"></div>Matches first 3</li>
+                             <li className="column1li"><div className="circle" id="c4"></div>Matches first 4</li>
+                             <li className="column1li"><div className="circle" id="c5"></div>Matches first 5</li>
+                             <li className="column1li"><div className="circle" id="c6"></div>Matches all 6</li>
+                             <li className="column1li"><div className="circle" id="c7"></div>Burn pool</li>
                          </ul>
                      </div>
                      <div id="column2">
@@ -300,11 +301,11 @@ export function Lottery(){
              <img src="assets/tombola.png" id="paintinrabbit" alt=""/>
              <div id="div5bottomtext">
                  <h2><b>Still got questions?</b></h2>
-                 <p><b>Check our in-depth guide on <a href="link" class="div5link">how to play the PancakeSwap lottery!</a></b></p>
+                 <p><b>Check our in-depth guide on <a href="link" className="div5link">how to play the PancakeSwap lottery!</a></b></p>
              </div>
             </div>
            </div>
         </div>
-   </div> 
+   </div>
  );
 }

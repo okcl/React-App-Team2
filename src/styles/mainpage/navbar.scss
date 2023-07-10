@@ -34,19 +34,19 @@
           }
           .down-menu {
             .tradingRewardLinkActivated {
-                a {
-                    color: var(--colors-secondary);
-                    font-weight:  600;
-                    div {
-                        color: var(--colors-failure);
-                        border: solid 2px var(--colors-failure);
-                        border-radius: 25px;
-                        padding: 0 5px;
-                        line-height: 1.2;
-                        font-size: 15px;
-                        font-weight: 400;
-                    }
+              a {
+                color: var(--colors-secondary);
+                font-weight:  600;
+                div {
+                  color: var(--colors-failure);
+                  border: solid 2px var(--colors-failure);
+                  border-radius: 25px;
+                  padding: 0 5px;
+                  line-height: 1.2;
+                  font-size: 15px;
+                  font-weight: 400;
                 }
+              }
 
             }
             .tradingRewardLink {
@@ -61,6 +61,28 @@
                   font-weight: 400;
                 }
               }
+            }
+            .lotteryLinkActivated {
+              a {
+                color: var(--colors-secondary);
+                font-weight:  600;
+              }
+
+
+
+            }
+
+          }
+        }
+        .nav-earn {
+          #earnLinkActivated a{
+            color: var(--colors-secondary);
+            font-weight: 600;
+          }
+          .poolsLinkActivated {
+            a {
+              color: var(--colors-secondary);
+              font-weight:  600;
             }
           }
         }
