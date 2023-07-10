@@ -11,8 +11,8 @@ export function Lottery(){
 
            <div id="images11">
              <img src="assets/star-big.png" className="images1" id="bigstar" alt=""/>
-             <img src="assets/star-small.png" className="images1" id="smallstar"/>
-             <img src="assets/ticket-l.png" className="images1" id="ticketl"/>
+             <img src="assets/star-small.png" className="images1" id="smallstar" alt=""/>
+             <img src="assets/ticket-l.png" className="images1" id="ticketl" alt=""/>
            </div>
 
           
@@ -22,14 +22,14 @@ export function Lottery(){
               <p id="div1price">$<TheCountUp end={44294} duration={2}/></p>    
               <h1 id="div1h12">in prizes!</h1>
               <div id="buyticketsbuttom">
-              <img src="assets/ticket.svg" id="backticket"/>
+              <img src="assets/ticket.svg" id="backticket" alt=""/>
               <button className="buttom" id="buyticketsbuttom1">Buy tickets</button>
               </div> 
                </div>
 
            <div id="images12">
-             <img src="assets/three-stars.png" className="images1" id="threestars"/>
-             <img src="assets/ticket-r.png" className="images1" id="ticketr"/>
+             <img src="assets/three-stars.png" className="images1" id="threestars" alt=""/>
+             <img src="assets/ticket-r.png" className="images1" id="ticketr" alt=""/>
            </div>
           
         </div>
@@ -75,13 +75,13 @@ export function Lottery(){
           </div>
         </div>
         <div id="div3">
-            <img src="assets/ticket-l.png" id="div3leftticket" class="div3img"/>
+            <img src="assets/ticket-l.png" id="div3leftticket" class="div3img" alt=""/>
             <div id="div3content">
               <h2 className="textdiv3">Connect your wallet</h2>
               <h2 className="textdiv3">to check if you've won!</h2>
               <button className="buttom"><b>Connect wallet</b></button>
             </div>
-            <img src="assets/ticket-r.png" id="div3rightticket" class="div3img"/>
+            <img src="assets/ticket-r.png" id="div3rightticket" class="div3img" alt=""/>
         </div>
         <div id="div4">
           <div id="div4content">
@@ -104,9 +104,9 @@ export function Lottery(){
                </div>  
             </div>
             <div id="tabletoplineright">
-                  <button className="arrow"><img src="assets/arrowleft.svg" /></button>
-                  <button className="arrow"><img src="assets/arrowright.svg" /></button>
-                  <button className="arrow"><img src="assets/arrowright2.svg" /></button>
+                  <button className="arrow"><img src="assets/arrowleft.svg" alt=""/></button>
+                  <button className="arrow"><img src="assets/arrowright.svg" alt=""/></button>
+                  <button className="arrow"><img src="assets/arrowright2.svg" alt=""/></button>
            </div>
         </div>
         <div id="tablecenter">
@@ -117,22 +117,22 @@ export function Lottery(){
                            <div id="tablecentercontentline2">
                            <div id="ballswithnumbers">
                            <div>
-                               <img src="assets/ball1.svg" className="ballnumber"/>
+                               <img src="assets/ball1.svg" className="ballnumber" alt=""/>
                            </div>
                            <div >
-                               <img src="assets/ball2.svg"className="ballnumber"/>
+                               <img src="assets/ball2.svg"className="ballnumber" alt=""/>
                            </div>
                            <div >
-                               <img src="assets/ball3.svg"className="ballnumber"/>
+                               <img src="assets/ball3.svg"className="ballnumber" alt=""/>
                            </div>
                            <div >
-                               <img src="assets/ball4.svg"className="ballnumber"/>
+                               <img src="assets/ball4.svg"className="ballnumber" alt=""/>
                            </div>
                            <div >
-                               <img src="assets/ball5.svg"className="ballnumber"/>
+                               <img src="assets/ball5.svg"className="ballnumber" alt=""/>
                            </div>
                            <div >
-                               <img src="assets/ball6.svg"className="ballnumber"/>
+                               <img src="assets/ball6.svg"className="ballnumber" alt=""/>
                            </div>
                            </div>
                         </div>  
@@ -213,20 +213,20 @@ export function Lottery(){
                   </div>
                    <div id="div5table">
                       <div id="raw1">
-                          <img src="assets/div5ball1.svg"/>
-                          <img src="assets/div5ball2.svg"/>
-                          <img src="assets/div5ball3.svg"/>
-                          <img src="assets/div5ball4.svg"/>
-                          <img src="assets/div5ball5.svg"/>
-                          <img src="assets/div5ball6.svg"/>
+                          <img src="assets/div5ball1.svg" alt=""/>
+                          <img src="assets/div5ball2.svg" alt=""/>
+                          <img src="assets/div5ball3.svg" alt=""/>
+                          <img src="assets/div5ball4.svg" alt=""/>
+                          <img src="assets/div5ball5.svg" alt=""/>
+                          <img src="assets/div5ball6.svg" alt=""/>
                       </div>
                       <div id="raw2">
                           <h2 className="tableH2">A</h2>
-                          <img src="assets/div5raw2.svg"/>
+                          <img src="assets/div5raw2.svg" alt=""/>
                       </div>
                       <div id="raw3">
                           <h2 className="tableH2">B</h2>
-                          <img src="assets/div5raw3.svg"/>
+                          <img src="assets/div5raw3.svg" alt=""/>
                       </div>
                    </div>
                  </div>
@@ -264,7 +264,7 @@ export function Lottery(){
              </div>
              <div id="table2">
                  <div id="t2raw1">
-                     <img src="assets/div5table.svg"/>
+                     <img src="assets/div5table.svg" alt=""/>
                  </div>
                  <div id="t2raw2">
                      <div id="column1">
@@ -297,7 +297,7 @@ export function Lottery(){
            <hr/>
              </div>
            <div id="div5bottom">
-             <img src="assets/tombola.png" id="paintinrabbit"/>
+             <img src="assets/tombola.png" id="paintinrabbit" alt=""/>
              <div id="div5bottomtext">
                  <h2><b>Still got questions?</b></h2>
                  <p><b>Check our in-depth guide on <a href="link" class="div5link">how to play the PancakeSwap lottery!</a></b></p>

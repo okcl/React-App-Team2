@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ThemeSelect from './ThemeSelect';
 
 function Footer() {
     return (
@@ -54,10 +55,7 @@ function Footer() {
                     <div className="buttons-footer">
 
                         <div className="buttons-footer-left">
-                            <label className="switch">
-                                <input type="checkbox"/>
-                                <span className="slider"></span>
-                            </label>
+                            <ThemeSelect />
 
                             <div className="lang-select">
                                 <button className="lang-select-btn">
