@@ -224,6 +224,11 @@ function Navbar() {
                 </div>
             </div>
             <div className="mbnav-list">
+            <div className="mnli-el">
+                    <Link to="/trading-reward">
+                        Trading Reward
+                    </Link>
+                </div>
                 <div className="mnli-el">
                     <Link to="#">
                         Trading Competition
@@ -235,7 +240,7 @@ function Navbar() {
                     </Link>
                 </div>
                 <div className="mnli-el">
-                    <Link to="#">
+                    <Link to="/lottery">
                         Lottery
                     </Link>
                 </div>
@@ -298,7 +303,7 @@ function Navbar() {
                     </Link>
                 </div>
                 <div className="mnli-el">
-                    <Link to="#">
+                    <Link to="/ifo">
                         IFO
                     </Link>
                 </div>
