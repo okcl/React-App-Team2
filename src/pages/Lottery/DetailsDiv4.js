@@ -1,10 +1,12 @@
+import TheCountUp from "../../components/CountUp"
+
 export function DetailsDiv4(){
     return(
         <div id="div4prizepot">
         <div id="prizepot1">
             <h4>Prize Pot</h4>
-            <h2>~$34 747</h2>
-            <p>22,761 CAKE</p>
+            <h2>~$<TheCountUp end={34747} duration={0.5}/></h2>
+            <p><TheCountUp end={22761} duration={0.5}/> CAKE</p>
         </div>
         <div id="prizepot2">
             <p>Total players this round: 140</p>
@@ -14,47 +16,47 @@ export function DetailsDiv4(){
         </div>
          <div className="match" id="match1">
             <h3>Match first 1</h3>
-            <h2>455 CAKE</h2>
-            <p>~$694</p>
-            <p>5.29 CAKE each</p>
+            <h2><TheCountUp end={455} duration={0.5}/> CAKE</h2>
+            <p>~$<TheCountUp end={694} duration={0.5}/></p>
+            <p><TheCountUp end={5.29} duration={0.5}/> CAKE each</p>
             <p>86 Winning Tickets</p>
          </div>
          <div className="match" id="match2">
             <h3>Match first 2</h3>
-            <h2>683 CAKE</h2>
-            <p>~$1,042</p>
-            <p>113.8 CAKE each</p>
+            <h2><TheCountUp end={683} duration={0.5}/> CAKE</h2>
+            <p>~$<TheCountUp end={1042} duration={0.5}/></p>
+            <p><TheCountUp end={113.8} duration={0.5}/> CAKE each</p>
             <p>6 Winning Tickets</p>
          </div>
          <div className="match" id="match3">
             <h3>Match first 3</h3>
-            <h2>1,138 CAKE</h2>
-            <p>~$1,735</p>
-            <p>569.02 CAKE each</p>
+            <h2><TheCountUp end={1138} duration={0.5}/> CAKE</h2>
+            <p>~$<TheCountUp end={1735} duration={0.5}/></p>
+            <p><TheCountUp end={569.02} duration={0.5}/> CAKE each</p>
             <p>2 Winning Tickets</p>
          </div>
          <div className="match" id="match4">
             <h3>Match first 4</h3>
-            <h2>2,276 CAKE</h2>
-            <p>~$3,474</p>
+            <h2><TheCountUp end={2276} duration={0.5}/> CAKE</h2>
+            <p>~$<TheCountUp end={3474} duration={0.5}/></p>
             <p>0 Winning Tickets</p>
          </div>
          <div className="match" id="match5">
             <h3>Match first 5</h3>
-            <h2>4,552 CAKE</h2>
-            <p>~$6,947</p>
+            <h2><TheCountUp end={4552} duration={0.5}/> CAKE</h2>
+            <p>~$<TheCountUp end={6947} duration={0.5}/></p>
             <p>0 Winning Tickets</p>
          </div>
          <div className="match" id="match6">
             <h3>Match first 6</h3>
-            <h2>9,104 CAKE</h2>
-            <p>~$13,894</p>
+            <h2><TheCountUp end={9104} duration={0.5}/> CAKE</h2>
+            <p>~$<TheCountUp end={13894} duration={0.5}/></p>
             <p>0 Winning Tickets</p>
          </div>
          <div className="match" id="match7">
             <h3>Burn</h3>
-            <h2>4,552 CAKE</h2>
-            <p>~$6,947</p>
+            <h2><TheCountUp end={4552} duration={0.5}/> CAKE</h2>
+            <p>~$<TheCountUp end={6947} duration={0.5}/></p>
          </div>
     </div>
     )
