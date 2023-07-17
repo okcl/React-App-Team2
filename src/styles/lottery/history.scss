@@ -191,6 +191,10 @@ hr{
                    grid-column-end: 1;
                    grid-row-start: 0;
                    grid-row-end: 2;
+                   display: flex;
+                   flex-direction: column;
+                   text-align: start;
+                   padding-left: 20px;
                   }
                   #prizepot2{
                    grid-column-start: 0;
@@ -204,6 +208,13 @@ hr{
                    grid-row-start: 0;
                    grid-row-end: 1;
                   }
+                  #prizepot2, #prizepot3 {
+                     color: var(--colors-text);
+                     padding: 20px;
+                     text-align: left;
+                     font-size: 14px;
+                   }
+                
                   #match1{
                    grid-column-start: 1;
                    grid-column-end: 2;
@@ -252,48 +263,42 @@ hr{
                    .match{
                      padding-bottom: 20px;
                    }
-                   .match h3{
-                     color: var(--bright-text);
-                     font-size: 18px;
-                     text-align: left;
-                     display: flex;
-                   }
-                   #prizepot1 h1{
-                     color: var(--bright-text);
-                   }
                    .match h2 {
-                     color: var(--dark-text);
+                     color: var(--colors-text);
                      margin:0px;
                      text-align: left;
                      font-size: 20px;
                      display: flex;
                    }
-                   #prizepot1 h4{
-                     color: var(--dark-text);
-                     margin:0px;
-                     padding-right: 0px;
-                   }
-                   .match p{
-                     color: var(--lightgrey);
-                     font-size: 12px;
+                   .match h3{
+                     color: var(--colors-secondary);
+                     font-size: 18px;
                      text-align: left;
                      display: flex;
                    }
-                   #prizepot1 p{
-                     color: var(--lightgrey);
-                     font-size: 15px;
+                   .match p{
+                     color: var(--colors-textSubtle);
+                     font-size: 12px;
+                     text-align: left;
+                     display: flex;
+                     font-size: small;
                    }
                    #prizepot1 h2{
-                     color: var(--bright-text);;
+                     color: var(--colors-secondary);;
                      font-size: 35px;
+                   }               
+                   #prizepot1 h4{
+                     color: var(--colors-text);
+                     margin:0px;
+                     padding-right: 0px;
+                   }
+                   #prizepot1 p{
+                     color: var(--colors-textSubtle);
+                     font-size: 15px;
+                     font-size: small;
                    }
          
-                 #prizepot2, #prizepot3 {
-                   color: var(--bright-text);
-                   padding: 15px;
-                   text-align: left;
-                 }
-              
+               
                
             @media screen and (max-width: 839px){
                #allhistorytable{
@@ -355,10 +360,4 @@ hr{
                 #yourtablecentercontent p{
                  color: var(--light-text);
                 }
-              #tablebottom p{
-               color: var(--light-text);
-               font-size: small;
-               height: 30px;
-              }
-              
           
