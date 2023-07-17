@@ -6,6 +6,7 @@
  }     
      .buyTickets2{
       width: 320px;
+      height: 650px;
       border-radius: 32px;
       display: flex;
       flex-direction: column;
@@ -15,8 +16,8 @@
           flex-direction: row;
           padding: 26px;
           justify-content: space-between;
-          background-color: var(--darkgrey);
-          color: var(--dark-text);
+          background-color: var(--colors-contrast);
+          color: var(--colors-text);
           border-top-right-radius: 32px;
           border-top-left-radius: 32px;
         }
@@ -25,7 +26,7 @@
             background-color: var(--colors-gradientCardHeader);
            }
         #buyTickCenter{
-          background-color: var(--bg-white);
+          background-color: var(--colors-background);
           align-items: center;
           border-bottom-left-radius: 32px;
           border-bottom-right-radius: 32px;
@@ -41,18 +42,18 @@
            }
                 
                #tickLine1 :nth-child(1){
-                 color:var(--bright-text);
+                 color:var(--colors-secondary);
                  margin: 5px;
                  font-size: 20px;
                }
                #tickLine1 :nth-child(2){
-                 color: var(--dark-text);
+                 color: var(--colors-text);
                  font-size: 20px;
                  display: flex;
                }
                  #smallTicket{
                   border: 0px;
-                  background-color: var(--bg-white);
+                  background-color: var(--colors-background);
                  }
            #tickLine2{
              border: var(--colors-inputSecondary) 1px solid;
@@ -72,7 +73,7 @@
                     color: var(--colors-textSubtle);
                   }
            #tickLine3, #tickLine4, #tickLine5{
-            color: var(--light-text);
+            color: var(--colors-textSubtle);
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -83,7 +84,7 @@
             display: flex;
            }
               #tickLine4left :nth-child(1){
-                color: var(--dark-text);
+                color: var(--colors-text);
                 font-style: bold;
               }
            #buyTickCenter :nth-child(7){
@@ -91,7 +92,7 @@
             justify-self: center;
            }
            #textBelow{
-            color: var(--light-text);
+            color: var(--colors-textSubtle);
             font-size: 14px;
             margin: 24px;
            }

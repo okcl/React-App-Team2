@@ -8,10 +8,6 @@ export function BuyTickets(){
       <button className="buttom" onClick={() => setIsOpen(true)}><b>Buy Tickets</b></button>
  
       {isOpen && (
-
-<div class="box-modal">
-  <div class="overlay"></div>
-    <div class="body-modal">
        <div className="buyTickets">
         <div className="buyTickets2">
           <div id="buyTickHeader">
@@ -77,8 +73,6 @@ export function BuyTickets(){
          </div>
        </div>
        </div>
-  </div>
-</div>
       )}
     </div>
   );
