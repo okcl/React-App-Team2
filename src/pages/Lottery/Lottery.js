@@ -159,35 +159,35 @@ export function Lottery(){
              <div id="div5cards">
               <div id="div5card1">
                  <div className="div5line1">
-                     <p><b>Step 1</b></p>
+                     <p>Step 1</p>
                  </div>
                  <div className="div5line2">
-                     <h2><b>Buy tickets</b></h2>
+                     <h2>Buy tickets</h2>
                  </div>
                  <div className="div5line3">
-                     <p><b>Prices are set when the round starts, equal to 5 USD in CAKE per ticket.</b></p>
+                     <p>Prices are set when the round starts, equal to 5 USD in CAKE per ticket.</p>
                  </div>
               </div>
               <div id="div5card2">
                  <div className="div5line1">
-                     <p><b>Step 2</b></p>
+                     <p>Step 2</p>
                  </div>
                  <div className="div5line2">
-                     <h2><b>Wait for the Draw</b></h2>
+                     <h2>Wait for the Draw</h2>
                  </div>
                  <div className="div5line3">
-                     <p><b>There is one draw every day alternating between 0 AM UTC and 12 PM UTC.</b></p>
+                     <p>There is one draw every day alternating between 0 AM UTC and 12 PM UTC.</p>
                  </div>
               </div>
               <div id="div5card3">
                      <div className="div5line1">
-                     <p><b>Step 3</b></p>
+                     <p>Step 3</p>
                     </div>
                  <div className="div5line2">
-                     <h2><b>Check for Prizes</b></h2>
+                     <h2>Check for Prizes</h2>
                  </div>
                  <div className="div5line3">
-                     <p><b>Once the round’s over, come back to the page and check to see if you’ve won!</b></p>
+                     <p>Once the round’s over, come back to the page and check to see if you’ve won!</p>
                  </div>
               </div>
              </div>
@@ -195,21 +195,21 @@ export function Lottery(){
               <div id="div5text">
                 <div id="div5text1">
                   <div id="div5textpart">
-                  <div className="div5textheader"><h2><b>Winning criteria</b></h2></div>
+                  <div className="div5textheader"><h2>Winning criteria</h2></div>
                   <div className="div5textheader2">
-                  <h2><b>The digits on your ticket must match in the correct order to win.</b></h2>
+                  <h2>The digits on your ticket must match in the correct order to win.</h2>
                   </div>
                   <div className="div5p1">
-                      <p><b>Here’s an example lottery draw, with two tickets, A and B.</b></p>
+                      <p>Here’s an example lottery draw, with two tickets, A and B.</p>
                   </div>
                   <div className="div5p2">
                       <ul>
-                          <li><b>Ticket A: The first 3 digits and the last 2 digits match, but the 4th      digit is wrong, so this ticket only wins a “Match first 3” prize.</b></li>
-                          <li><b>Ticket B: Even though the last 5 digits match, the first digit is      wrong, so this ticket doesn’t win a prize.</b></li>
+                          <li>Ticket A: The first 3 digits and the last 2 digits match, but the 4th      digit is wrong, so this ticket only wins a “Match first 3” prize.</li>
+                          <li>Ticket B: Even though the last 5 digits match, the first digit is      wrong, so this ticket doesn’t win a prize.</li>
                       </ul>
                   </div>
                   <div className="div5p3">
-                      <p><b>Prize brackets don’t ‘stack’: if you match the first 3 digits in order,      you’ll only win prizes from the ‘Match 3’ bracket, and not from ‘Match 1’ and      ‘Match 2’.</b></p>
+                      <p>Prize brackets don’t ‘stack’: if you match the first 3 digits in order,      you’ll only win prizes from the ‘Match 3’ bracket, and not from ‘Match 1’ and      ‘Match 2’.</p>
                   </div>
                   </div>
                    <div id="div5table">
@@ -234,16 +234,16 @@ export function Lottery(){
              <hr/>
            <div id="div5text2">
              <div id="div5textpart2">
-             <div className="div5textheader"><h2><b>Prize Funds</b></h2></div>
+             <div className="div5textheader"><h2>Prize Funds</h2></div>
              <div className="div5p1">
-                 <p><b>The prizes for each lottery round come from three sources:</b></p>
+                 <p>The prizes for each lottery round come from three sources:</p>
              </div>
              <div className="div5textheader2">
-                 <h2><b>Ticket Purchases</b></h2>
+                 <h2>Ticket Purchases</h2>
              </div>
              <div className="div5p2">
                  <ul>
-                     <li><b>100% of the CAKE paid by people buying tickets that round goes back into the prize pools.</b></li>
+                     <li>100% of the CAKE paid by people buying tickets that round goes back into the prize pools.</li>
                  </ul>
              </div>
              <div className="div5textheader2">
@@ -251,15 +251,15 @@ export function Lottery(){
              </div>
              <div className="div5p2">
                  <ul>
-                     <li><b>After every round, if nobody wins in one of the prize brackets, the unclaimed CAKE for that bracket rolls over into the next round and are redistributed among the prize pools.</b></li>
+                     <li>After every round, if nobody wins in one of the prize brackets, the unclaimed CAKE for that bracket rolls over into the next round and are redistributed among the prize pools.</li>
                  </ul>
              </div>
              <div className="div5textheader2">
-                 <h2><div className="div5textheader2"><b>CAKE Injections</b></div></h2>
+                 <h2><div className="div5textheader2">CAKE Injections</div></h2>
              </div>
              <div className="div5p2">
                  <ul>
-                     <li><b>An average total of 35,000 CAKE from the treasury is added to lottery rounds over the course of a week. This CAKE is of course also included in rollovers! Read more in our guide to <a href="cake tokenomics" className="div5link">CAKE Tokenomics</a></b></li>
+                     <li>An average total of 35,000 CAKE from the treasury is added to lottery rounds over the course of a week. This CAKE is of course also included in rollovers! Read more in our guide to <a href="cake tokenomics" className="div5link">CAKE Tokenomics</a></li>
                  </ul>
              </div>Name
              </div>
@@ -269,7 +269,7 @@ export function Lottery(){
                  </div>
                  <div id="t2raw2">
                      <div id="column1">
-                      <h5 className="columnheader"><b>DIGITS MATCHED</b></h5>
+                      <h5 className="columnheader">DIGITS MATCHED</h5>
                          <ul>
                              <li className="column1li"><div className="circle" id="c1"></div>Matches first 1</li>
                              <li className="column1li"><div className="circle" id="c2"></div>Matches first 2</li>
@@ -281,7 +281,7 @@ export function Lottery(){
                          </ul>
                      </div>
                      <div id="column2">
-                      <h5 className="columnheader"><b>PRIZE POOL ALLOCATION</b></h5>
+                      <h5 className="columnheader">PRIZE POOL ALLOCATION</h5>
                          <ul>
                              <li className="clumn2li">2%</li>
                              <li className="clumn2li">3%</li>
@@ -300,8 +300,8 @@ export function Lottery(){
            <div id="div5bottom">
              <img src="assets/tombola.png" id="paintinrabbit" alt=""/>
              <div id="div5bottomtext">
-                 <h2><b>Still got questions?</b></h2>
-                 <p><b>Check our in-depth guide on <a href="link" className="div5link">how to play the PancakeSwap lottery!</a></b></p>
+                 <h2>Still got questions?</h2>
+                 <p>Check our in-depth guide on <a href="link" className="div5link">how to play the PancakeSwap lottery!</a></p>
              </div>
             </div>
            </div>
