@@ -54,7 +54,7 @@ export function BuyTicketsDiv1(){
                   Bulk discount
                 </p>
                 <div>
-                  <img src="assets/questionMsrk.svg"/>
+                  <img src="assets/questionMark.svg"/>
                 </div>
               </div>
               <p id="tickLine4right">
