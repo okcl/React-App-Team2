@@ -132,6 +132,11 @@ body {
     --radii-default: 16px;
     --radii-card: 24px;
     --radii-circle: 50%;
+    // Custom ↓
+    //Part 1
+    --home-part1-bg: linear-gradient(139.73deg,#e6fdff 0%,#f3efff 100%);
+    --home-part1-SVGLightShow: block;
+    --home-part1-SVGDarkShow: none;
 }
 
 [data-theme="dark"] {
@@ -229,4 +234,9 @@ body {
     --radii-default: 16px;
     --radii-card: 24px;
     --radii-circle: 50%;
+    // Custom ↓
+    //Part 1
+    --home-part1-bg: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%);
+    --home-part1-SVGLightShow: none;
+    --home-part1-SVGDarkShow: block;
 }
