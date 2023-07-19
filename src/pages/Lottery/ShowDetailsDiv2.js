@@ -13,7 +13,7 @@ export default function ShowDetailsDiv2() {
 
   return ( 
     <div>
-      <button className="details"onClick={handleClick}>{ active ? "Hide" : "Details"}<img alt="" src={active ? "assets/detailsarrowup.svg" : "assets/detailsarrowdown.svg"}/></button>
+      <button className="details" id="detailsDiv2"onClick={handleClick}>{ active ? "Hide" : "Details"}<img alt="" src={active ? "assets/detailsarrowup.svg" : "assets/detailsarrowdown.svg"}/></button>
       {isShown && <DetailsDiv2 />}
     </div>
   );

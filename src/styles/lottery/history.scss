@@ -70,13 +70,14 @@ hr{
    width:1px;
 }
 
-  #allhistorytable, #yourhistorytable{
-     background-color: var(--colors-backgroundAlt);
+  #allhistorytable, #yourhistorytables{
+    background-color: var(--colors-backgroundAlt);
      width: 750px;
      height: auto;
      border-radius: 25px;
      border: 0px;
      border-bottom: 2px solid var(--colors-backgroundAlt2);
+     margin: 30px;
   }
      #tabletop, #yourtabletop{
         display: flex;
@@ -84,14 +85,14 @@ hr{
         align-content: space-between ;
         width: 100%;
         border: 0px;
-        border-bottom: 1px solid var(--lightestgrey);
+        border-bottom: 0.5px solid var(--colors-cardBorder);
+        background-color: var(--colors-gradientCardHeader);
      }
             #tabletoplineleft{
              padding: 10px
             }
          #tabletopline{
            display: flex;
-           flex-direction: row;
          }
      #tablecenter{
         display: flex;
@@ -100,7 +101,7 @@ hr{
         flex-direction: row;
         justify-content: space-between;
         border: 0px;
-        border-bottom: 1px solid var(--lightestgrey);
+        border-bottom: 0.5px solid var(--colors-cardBorder);
      }
      .ballnumber{
         width: 100px;
@@ -337,7 +338,7 @@ hr{
          
             #rounds{
              font-size: 100%;
-             color: var(--dark-text);
+             color: var(--colors-text);
              margin: 23px;
            }
              #yourtablecenter{
@@ -346,7 +347,7 @@ hr{
              flex-direction: row;
              justify-content: space-between;
              border: 0px;
-             border-bottom: 1px solid var(--lightestgrey);
+             border-bottom: 1px solid var(--colors-cardBorder);
              display: flex;
              justify-content: center;
            }
@@ -358,6 +359,14 @@ hr{
                padding: 35px;
               }
                 #yourtablecentercontent p{
-                 color: var(--light-text);
+                 color: var(--colors-textSubtle);
                 }
-          
+        .tablebottom{
+          min-height: 50px;
+          color: var(--colors-textSubtle);
+          padding-top: 10px;
+        }
+
+        #detailsDiv4{
+          background-color: var(--colors-backgroundAlt);
+        }
