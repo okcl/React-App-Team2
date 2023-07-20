@@ -5,6 +5,8 @@ function Navbar() {
     const location = useLocation();
     const tradingRewardLocation = location.pathname === '/trading-reward'
     const IFOLocation = location.pathname === '/ifo'
+    const lotteryLocation = location.pathname === '/lottery'
+    const poolsLocation = location.pathname === '/pools'
   return (
     <div>
       <header className="nav">
@@ -31,14 +33,14 @@ function Navbar() {
                           </div>
                       </div>
                       <div className="nav-earn">
-                        <div className="link"><Link to="/">Earn</Link></div>
+                        <div id={poolsLocation ? "earnLinkActivated" : "earnLink"}className="link"><Link to="/">Earn</Link></div>
                         <div className="down-menu">
                           <div><Link to="/">Farms</Link></div>
-                          <div><Link to="pools">Pools</Link></div>
+                          <div className={poolsLocation ? "poolsLinkActivated" : "poolsLink"}><Link to="pools">Pools</Link></div>
                         </div>
                       </div>
                       <div className="nav-win">
-                        <div id={tradingRewardLocation ? "winLinkActivated" : "winLink"} className="link"><Link to="/">Win</Link></div>
+                        <div id={tradingRewardLocation ||lotteryLocation ? "winLinkActivated" : "winLink"} className="link"><Link to="/">Win</Link></div>
                         <div className="down-menu">
                           <div className={tradingRewardLocation ? "tradingRewardLinkActivated" : "tradingRewardLink"}><Link to="/trading-reward">Trading Reward
                           <div>
@@ -46,7 +48,7 @@ function Navbar() {
                             </div></Link></div>
                           <div><Link to="/">Trading Competition</Link></div>
                           <div><Link to="/">Prediction (BETA)</Link></div>
-                          <div><Link to="/lottery">Lottery</Link></div>
+                          <div className={lotteryLocation ? "lotteryLinkActivated" : "lotteryLink"}><Link to="/lottery">Lottery</Link></div>
                           <div><Link to="/">Pottery (BETA)</Link></div>
                         </div>
                       </div>
@@ -61,7 +63,7 @@ function Navbar() {
                       <div className="nav-extra">
                           <div id={IFOLocation ? "navExtraActivated" : "navExtra"} className="link">
                             <Link to="/">
-                            <svg viewBox="0 0 24 24" color="secondary" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-231a1e38-0 gYhxLk"><path d="M6 10C4.9 10 4 10.9 4 12C4 13.1 4.9 14 6 14C7.1 14 8 13.1 8 12C8 10.9 7.1 10 6 10ZM18 10C16.9 10 16 10.9 16 12C16 13.1 16.9 14 18 14C19.1 14 20 13.1 20 12C20 10.9 19.1 10 18 10ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
+                            <svg viewBox="0 0 24 24" color="secondary" width="20px" xmlns="http://www.w3.org/2000/svg" className="sc-231a1e38-0 gYhxLk"><path d="M6 10C4.9 10 4 10.9 4 12C4 13.1 4.9 14 6 14C7.1 14 8 13.1 8 12C8 10.9 7.1 10 6 10ZM18 10C16.9 10 16 10.9 16 12C16 13.1 16.9 14 18 14C19.1 14 20 13.1 20 12C20 10.9 19.1 10 18 10ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z"></path></svg>
                             </Link>
                           </div>
                           <div  className="down-menu">
@@ -246,6 +248,11 @@ function Navbar() {
                 </div>
             </div>
             <div className="mbnav-list">
+            <div className="mnli-el">
+                    <Link to="/trading-reward">
+                        Trading Reward
+                    </Link>
+                </div>
                 <div className="mnli-el">
                     <Link to="#">
                         Trading Competition
@@ -257,7 +264,7 @@ function Navbar() {
                     </Link>
                 </div>
                 <div className="mnli-el">
-                    <Link to="#">
+                    <Link to="/lottery">
                         Lottery
                     </Link>
                 </div>
@@ -320,7 +327,7 @@ function Navbar() {
                     </Link>
                 </div>
                 <div className="mnli-el">
-                    <Link to="#">
+                    <Link to="/ifo">
                         IFO
                     </Link>
                 </div>

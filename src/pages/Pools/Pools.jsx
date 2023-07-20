@@ -9,7 +9,7 @@ import { useState } from "react";
 
 function Pools() {
     const [sortOption, setSortOption] = useState("hot");
-    
+
     const handleSort = (option) => {
       setSortOption(option);
     };
@@ -25,7 +25,7 @@ function Pools() {
             earned: "Earned",
             latest: "Latest"
           };
-    
+
         return(
             <li className="sort">
                 <div className="sselected">
@@ -43,7 +43,7 @@ function Pools() {
 
     function SortDropdownMenu(){
 
-    
+
         return(
             <div className="sdropdown-menu">
             <ul>
@@ -70,7 +70,7 @@ function Pools() {
 
 
   return(
-    <div className="pools">  
+    <div className="pools">
       <div className="earn-nav">
         <div className="enav-wrap">
           <div className="enav-svg1">

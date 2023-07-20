@@ -132,6 +132,16 @@ body {
     --radii-default: 16px;
     --radii-card: 24px;
     --radii-circle: 50%;
+    // Custom ↓
+    //Part 1
+    --home-part1-bg: linear-gradient(139.73deg,#e6fdff 0%,#f3efff 100%);
+    --home-part1-SVGLightShow: block;
+    --home-part1-SVGDarkShow: none;
+
+    //Part 6
+    --home-part6-bg: linear-gradient(180deg, #6fb6f1 0%, #eaf2f6 100%);
+    --home-part6-card-bg: rgba(255, 255, 255, 0.6)
+
 }
 
 [data-theme="dark"] {
@@ -229,4 +239,13 @@ body {
     --radii-default: 16px;
     --radii-card: 24px;
     --radii-circle: 50%;
+    // Custom ↓
+    //Part 1
+    --home-part1-bg: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%);
+    --home-part1-SVGLightShow: none;
+    --home-part1-SVGDarkShow: block;
+
+    //Part 6
+    --home-part6-bg: linear-gradient(180deg,#0b4576 0%,#091115 100%);
+    --home-part6-card-bg: rgba(8, 6, 11, 0.6);
 }
