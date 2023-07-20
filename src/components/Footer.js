@@ -35,11 +35,12 @@ const ScrollToTopButton = () => {
           {showButton && (
             <button
               onClick={scrollToTop}
+              className='go-top-btn'
               style={{
                 position: 'fixed',
                 bottom: '150px',
                 right: '40px',
-                zIndex: 999,
+                zIndex: 989,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
