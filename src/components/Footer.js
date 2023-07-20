@@ -1,5 +1,73 @@
 import { Link } from 'react-router-dom';
 import ThemeSelect from './ThemeSelect';
+import { animateScroll as scroll } from 'react-scroll';
+import { useEffect, useState } from 'react';
+
+const ScrollToTopButton = () => {
+    const [showButton, setShowButton] = useState(false);
+  
+    const scrollToTop = () => {
+      scroll.scrollToTop({
+        duration: 500,
+        smooth: 'easeInOutQuad',
+      });
+    };
+  
+    const handleScroll = () => {
+      if (window.scrollY > 800) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+  
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
+    
+  
+    return (
+        <>
+          {showButton && (
+            <button
+              onClick={scrollToTop}
+              style={{
+                position: 'fixed',
+                bottom: '150px',
+                right: '40px',
+                zIndex: 999,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '48px',
+                height: '48px',
+                borderRadius: '16px',
+                boxShadow: 'rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset',
+                cursor: 'pointer',
+                fontFamily: 'inherit',
+                fontSize: '16px',
+                fontWeight: 600,
+                letterSpacing: '0.03em',
+                lineHeight: 1,
+                outline: '0px',
+                backgroundColor: 'var(--colors-primary)',
+                color: 'var(--colors-invertedContrast)',
+                transition: 'background-color 0.2s ease, opacity 0.2s ease, transform 0.2s ease',
+                border: 'none',
+              }}
+            >
+              <img src="/assets//svgexport-57.svg" alt="arrow-up" style={{ fill: 'var(--colors-invertedContrast)' }} />
+            </button>
+          )}
+        </>
+      );
+      
+  };
+  
 
 function Footer() {
     return (
@@ -63,12 +131,34 @@ function Footer() {
                                     <div>EN</div>
                                 </button>
                                 <div className="lang-select-content">
+                                    <button className="lang-item">العربية</button>
+                                    <button className="lang-item">বাংলা</button>
                                     <button className="lang-item">English</button>
                                     <button className="lang-item">Deutsch</button>
-                                    <button className="lang-item">Espanol</button>
+                                    <button className="lang-item">Ελληνικά</button>
+                                    <button className="lang-item">Español</button>
+                                    <button className="lang-item">Suomalainen</button>
+                                    <button className="lang-item">Filipino</button>
                                     <button className="lang-item">Français</button>
+                                    <button className="lang-item">हिंदी</button>
+                                    <button className="lang-item">Magyar</button>
+                                    <button className="lang-item">Bahasa Indonesia</button>
+                                    <button className="lang-item">Italiano</button>
+                                    <button className="lang-item">日本語</button>
+                                    <button className="lang-item">한국어</button>
+                                    <button className="lang-item">Nederlands</button>
+                                    <button className="lang-item">Polski</button>
+                                    <button className="lang-item">Português (Brazil)</button>
                                     <button className="lang-item">Português</button>
+                                    <button className="lang-item">Română</button>
+                                    <button className="lang-item">Русский</button>
+                                    <button className="lang-item">Svenska</button>
+                                    <button className="lang-item">தமிழ்</button>
                                     <button className="lang-item">Türkçe</button>
+                                    <button className="lang-item">Українська</button>
+                                    <button className="lang-item">Tiếng Việt</button>
+                                    <button className="lang-item">简体中文</button>
+                                    <button className="lang-item">繁體中文</button>
                                 </div>
                             </div>
                         </div>
@@ -84,11 +174,7 @@ function Footer() {
                     </div>
                 </div>
             </footer>
-            <div className="go-top-container">
-                <button className="go-top">
-                    <Link to="#"><img src="/assets//svgexport-57.svg" alt="arrow-up"/></Link>
-                </button>
-            </div>
+            <ScrollToTopButton />
         </div>
     )
 }

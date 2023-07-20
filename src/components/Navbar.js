@@ -89,12 +89,34 @@ function Navbar() {
                               <img src="/assets/svgexport-7.svg" alt="" style={{width:24}}/>
                           </button>
                           <div className="lang-down-menu">
+                              <button className="lang-item">العربية</button>
+                              <button className="lang-item">বাংলা</button>
                               <button className="lang-item">English</button>
                               <button className="lang-item">Deutsch</button>
-                              <button className="lang-item">Espanol</button>
+                              <button className="lang-item">Ελληνικά</button>
+                              <button className="lang-item">Español</button>
+                              <button className="lang-item">Suomalainen</button>
+                              <button className="lang-item">Filipino</button>
                               <button className="lang-item">Français</button>
+                              <button className="lang-item">हिंदी</button>
+                              <button className="lang-item">Magyar</button>
+                              <button className="lang-item">Bahasa Indonesia</button>
+                              <button className="lang-item">Italiano</button>
+                              <button className="lang-item">日本語</button>
+                              <button className="lang-item">한국어</button>
+                              <button className="lang-item">Nederlands</button>
                               <button className="lang-item">Polski</button>
+                              <button className="lang-item">Português (Brazil)</button>
+                              <button className="lang-item">Português</button>
+                              <button className="lang-item">Română</button>
+                              <button className="lang-item">Русский</button>
+                              <button className="lang-item">Svenska</button>
+                              <button className="lang-item">தமிழ்</button>
                               <button className="lang-item">Türkçe</button>
+                              <button className="lang-item">Українська</button>
+                              <button className="lang-item">Tiếng Việt</button>
+                              <button className="lang-item">简体中文</button>
+                              <button className="lang-item">繁體中文</button>
                           </div>
                       </div>
                   </div>
