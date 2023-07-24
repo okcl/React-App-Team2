@@ -50,7 +50,7 @@ export function AllHistory(){
                    </div>
                </div>
          </div>
-           <div id="tablebottom">
+           <div class="tablebottom">
               <ShowDetails/>
            </div>
   </div>

@@ -2,22 +2,31 @@ import { useState } from "react";
 import { AllHistory } from "./AllHistory";
 import { YourHistoryTable } from "./YourHistory";
 
-export function SwitchHistory(){
-    const [history1, setHistory1] = useState(true);
-    const [history2, setHistory2] = useState(false);
+export function SwitchHistory() {
+  const [history1, setHistory1] = useState(true);
 
-    const handleClick1 = ()=>{
-        setHistory1(current=> !current);
-        setHistory2(current=> !current);
-    }
+  const handleClick1 = (result) => {
+    setHistory1(() => result);
+  };
 
-
-
-    return(
-        <div id="div4switching">
-             <button id="allhistory" onClick={handleClick1}><b>All History</b></button>
-             <button id="yourhistory" onClick={handleClick1}><b>Your History</b></button>
-             {history1 ? <AllHistory/> : <YourHistoryTable/>}
-        </div>
-    )
+  return (
+    <div id="div4switching">
+      <button
+        id="allhistory"
+        className={{history1} ? "active-button" : "inactive-button"}
+        onClick={() => handleClick1(true)}
+      >
+        <b>All History</b>
+      </button>
+      <button 
+        id="yourhistory"
+        className={{history1} ? "inactive-button" : "active-button"} 
+        onClick={() => handleClick1(false)}
+      >
+        <b>Your History</b>
+      </button>
+      <br></br>
+      {history1 ? <AllHistory /> : <YourHistoryTable />}
+    </div>
+  );
 }
