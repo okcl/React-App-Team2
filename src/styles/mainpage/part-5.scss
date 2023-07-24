@@ -20,7 +20,7 @@
                     font-size: 20px;
                     font-weight: 600;
                     line-height: 1.1;
-                    color: var(--color-text);
+                    color: var(--colors-white);
                 }
                 .switch5{
                     padding: 2px;
@@ -89,6 +89,7 @@
                             .fgbox-mid{
                                 gap: 4px;
                                 display: flex;
+                                color: var(--colors-white);
     
                                 .fxbox-mid-wrap{
                                     text-decoration: none;

@@ -80,6 +80,7 @@
                Font-weight: 600;
                font-size: medium ;
                background-color: var(--colors-backgroundAlt);
+               align-self: center;
             }
 .details:hover{
   opacity: 0.65;
@@ -355,7 +356,7 @@
          display: flex;
          flex-direction: row;
          font-size: 20px;
-         padding: 0px;
+         padding: 30px;
         }
           #div2time{
             display: flex;
@@ -366,14 +367,15 @@
               padding-right: 5px;
              }
       #center{
-         background-color: var(--white);
-         border: 1px solid var(--white);
+         background-color: var(--colors-backgroundAlt);
+         border: 1px solid var(--colors-cardBorder);
          border-radius: 15px ;
+         border-bottom-width: 2px;
          width: 750px;
          height: auto;
       }
          #text{
-            background-color: var(--disabled);
+            background-color: var(--colors-cardBorder);
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             display: flex;
@@ -381,22 +383,21 @@
             height: 60px;
             align-items: center;
             padding:20px;
-            color: var(--dark-text);
+            color: var(--colors-text);
       
          }
             #text p{
               font-size: 25px;
             }
             #draw{
-              color: var(--light-text);
+              color: var(--colors-text);
             }
              
          #topframe{
           height: auto;
          }
          #centerframeel{
-            color: white;
-            height: 270px;
+            height: auto;
             display: grid;
             grid-template-columns: 200px 550px;
             grid-template-rows: 1fr 1fr;
@@ -404,11 +405,11 @@
             "pricepottext theprizepot"
             "yourticketstext prizepotbutton";
             padding-left: 20px;
-            border-bottom: grey 1px solid;
+            border-bottom: var(--colors-cardBorder) 0.5px solid;
          }
 
             #pricepottext, #yourticketstext{
-               color: var(--dark-text);
+               color: var(--colors-text);
                font-size: 25px;
             }
             #prize{
@@ -434,14 +435,15 @@
                padding-bottom: 20px;
             }
          #bottomframe{
-            display: flex;
-            justify-content: center;
-            align-content: center;
+            width: 100%;
+            align-items: center;
          }
              #div2details{
+              padding: 25px;
+              background-color: var(--colors-dropdownDeep);
+              width: 100%;
               align-content: space-evenly;
               display: grid;
-              grid-template-columns: 130px 130px 130px 130px;
               grid-template-rows: 140px 140px;
               align-items: start;
              }
@@ -450,8 +452,9 @@
                   grid-column-end: 5;
                   grid-row-start: 0;
                   grid-row-end: 1;
-                  color: var(--dark-text);
+                  color: var(--colors-text);
                   font-size: 14px;
+                  padding: 25px;
                 }
                 
    
@@ -485,10 +488,7 @@
                    #yourticketstext{
                       display: none;
                    }
-               #bottomframe{
-                  align-items: center;
-               }
-            }
+                  }
    
 #div3{
    background: linear-gradient(139.73deg, rgb(49, 61, 92) 0%, rgb(61, 42, 84) 100%);
@@ -1204,4 +1204,3 @@
           .go-top:hover {
             opacity: 0.65;
           }
-          

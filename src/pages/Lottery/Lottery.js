@@ -9,7 +9,8 @@ import { SwitchingBtn } from "./SwitchingLot";
 export function Lottery(){
     return (
    <div className="App">
-        <div id="div1">
+        <div id="div1"   Style = {{ backgroundImage: "assets/bg-star.svg",
+   }}>
 
            <div id="images11">
              <img src="assets/star-big.png" className="images1" id="bigstar" alt=""/>

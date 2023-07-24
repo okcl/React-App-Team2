@@ -178,8 +178,6 @@ hr{
                    background-color: var(--colors-background);
                    width: 750px;
                    height: auto;
-                   border-bottom-left-radius: 25px;
-                   border-bottom-right-radius: 25px;
                    border-top: 1px solid var(--colors-inputSecondary);
                    border-bottom: 2px solid var(--colors-inputSecondary);
                    display: grid;
@@ -259,11 +257,8 @@ hr{
                    grid-row-end: 3;
                   }
                   #match7 h3{
-                   color: var(--pink)
+                   color: var(--colors-failure);
                   }
-                   .match{
-                     padding-bottom: 20px;
-                   }
                    .match h2 {
                      color: var(--colors-text);
                      margin:0px;
@@ -364,9 +359,7 @@ hr{
         .tablebottom{
           min-height: 50px;
           color: var(--colors-textSubtle);
-          padding-top: 10px;
-        }
-
-        #detailsDiv4{
-          background-color: var(--colors-backgroundAlt);
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
