@@ -62,13 +62,7 @@ const TradingReward = () => {
             </section>
             {/* ---------------- Section 1 --------------- */}
             <section className="TRsection1">
-                <div className="section1MovingParts">
-                    <img src="/assets/trading-reward-star1.png" alt="star1"/>
-                    <img src="/assets/trading-reward-star2.png" alt="star2"/>
-                    <img src="/assets/trading-reward-star3.png" alt="star3"/>
-                    <img src="/assets/trading-reward-butter-1.png" alt="butter1"/>
-                    <img src="/assets/trading-reward-butter-2.png" alt="butter-2"/>
-                </div>
+
                 <div className="section1Container">
 
                     <div className="section1Left">
@@ -85,6 +79,13 @@ const TradingReward = () => {
                         </div>
                     </div>
                     <div className="section1Right">
+                        <div className="section1MovingParts">
+                            <img src="/assets/trading-reward-star1.png" alt="star1"/>
+                            <img src="/assets/trading-reward-star2.png" alt="star2"/>
+                            <img src="/assets/trading-reward-star3.png" alt="star3"/>
+                            <img src="/assets/trading-reward-butter-1.png" alt="butter1"/>
+                            <img src="/assets/trading-reward-butter-2.png" alt="butter-2"/>
+                        </div>
                         <div className="section1RightImage">
                             <img src="/assets/trading-reward-banner-bunny.webp" alt="trading reward banner bunny"/>
                         </div>
