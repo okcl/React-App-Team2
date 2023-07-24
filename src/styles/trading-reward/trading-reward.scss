@@ -83,93 +83,7 @@ body {
     z-index: -2;
     padding: 47px 16px 38px 16px;
     background: linear-gradient(340.33deg,rgb(193, 237, 240) -11.09%, rgb(234, 251, 247) 32.51%, rgb(236, 228, 251) 96.59%);
-    .section1MovingParts {
-        width: 100%;
-        max-width: 1140px;
-        img:nth-child(1) {
-            width: 43px;
-            height: 43px;
-            position: absolute;
-            left: 55%;
-            top: 10%;
-            animation: 2.5s ease-in-out 0s infinite normal none running star1;
-            @keyframes star1 {
-                0% {
-                    transform: translate(0px, 0px)
-                }
-                50% {
-                    transform: translate(-10px, 10px)
-                }
-                100% {
-                    transform: translate(0px, 0px)
-                }
-            }
-        }
-        img:nth-child(2) {
-            width: 71px;
-            height: 71px;
-            position: absolute;
-            top: 50%;
-            right: 0%;
-            animation: 3s ease-in-out 0s infinite normal none running star2;
-            @keyframes star2 {
-                0% {
-                    transform: translate(0px, 0px)
-                }
-                50% {
-                    transform: translate(10px, 10px)
-                }
-                100% {
-                    transform: translate(0px, 0px);
-                }
-            }
-        }
-        img:nth-child(3) {
-            width: 36px;
-            height: 35px;
-            position: absolute;
-            left: 48%;
-            bottom: 15%;
-            animation: 3.5s ease-in-out 0s infinite normal none running star3;
-            @keyframes star2 {
-                0% {
-                    transform: translate(0px, 0px)
-                }
-                50% {
-                    transform: translate(-10px, 10px)
-                }
-            }
-        }
-        img:nth-child(4) {
-            width: 186px;
-            height: 168px;
-            position: absolute;
-            left: 55%;
-            top: 10%;
-            animation: 3.5s ease-in-out 0s infinite normal none running butter1;
-            @keyframes butter1 {
-                0% {
-                    transform: translate(0px, 0px)
-                }
-                50% {
-                    transform: translate(10px, 10px)
-                }
-                100% {
-                    transform: translate(0px, 0px);
-                }
-            }
-        }
-        img:nth-child(5) {
-            width: 167px;
-            height: 261px;
-            position: absolute;
-            left: 58%;
-            bottom: 18%;
-            z-index: -1;
 
-        }
-
-    }
     .section1Container {
         width: 100%;
         display: flex;
@@ -251,6 +165,99 @@ body {
             }
         }
         .section1Right {
+            position: relative;
+            .section1MovingParts {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 20%;
+                max-width: 1140px;
+                img:nth-child(1) {
+                    width: 43px;
+                    height: 43px;
+                    position: absolute;
+                    left: -40%;
+                    top: 5%;
+                    animation: 2.5s ease-in-out 0s infinite normal none running star1;
+                    @keyframes star1 {
+                        0% {
+                            transform: translate(0px, 0px)
+                        }
+                        50% {
+                            transform: translate(-10px, 10px)
+                        }
+                        100% {
+                            transform: translate(0px, 0px)
+                        }
+                    }
+                }
+                img:nth-child(2) {
+                    width: 71px;
+                    height: 71px;
+                    position: absolute;
+                    top: 50%;
+                    right: 20%;
+                    animation: 3s ease-in-out 0s infinite normal none running star2;
+                    @keyframes star2 {
+                        0% {
+                            transform: translate(0px, 0px)
+                        }
+                        50% {
+                            transform: translate(10px, 10px)
+                        }
+                        100% {
+                            transform: translate(0px, 0px);
+                        }
+                    }
+                }
+                img:nth-child(3) {
+                    width: 36px;
+                    height: 35px;
+                    position: absolute;
+                    left: -60%;
+                    bottom: 10%;
+                    animation: 3.5s ease-in-out 0s infinite normal none running star3;
+                    @keyframes star3 {
+                        0% {
+                            transform: translate(0px, 0px)
+                        }
+                        50% {
+                            transform: translate(-10px, 10px)
+                        }
+                    }
+                }
+                img:nth-child(4) {
+                    width: 186px;
+                    height: 168px;
+                    position: absolute;
+                    left: -40%;
+                    top: 5%;
+                    animation: 3.5s ease-in-out 0s infinite normal none running butter1;
+                    @keyframes butter1 {
+                        0% {
+                            transform: translate(0px, 0px)
+                        }
+                        50% {
+                            transform: translate(10px, 10px)
+                        }
+                        100% {
+                            transform: translate(0px, 0px);
+                        }
+                    }
+                }
+                img:nth-child(5) {
+                    width: 167px;
+                    height: 261px;
+                    position: absolute;
+                    left: -30%;
+                    bottom: 15%;
+                    z-index: -1;
+
+                }
+
+            }
             .section1RightImage {
                 margin: 0px 0px 0px 81px;
                 display: block;
@@ -977,94 +984,7 @@ body {
 
     .TRsection5 {
         width: 100%;
-        .TRrewardsBreakdown {
-        }
-        .TRsection5Interval {
-        }
-        .TRsection5Campaign {
-        }
-        .TRsection5ContainerShadow {
-            .TRsection5ContainerBackground {
-                .TRsection5TableContainer {
-                    table {
-                        thead {
-                            tr {
-                                th:nth-child(1) {
-                                }
-                                th:nth-child(2) {
-                                }
-                                th:nth-child(3) {
-                                }
-                                th:nth-child(4) {
-                                }
-                            }
-                        }
-                        tbody {
-                            tr {
-                                td:nth-child(1) {
-                                    .TRsection5Cell1Container {
-                                        .TRsection5Cell1Split {
-                                            .TRsection5IconContainer {
-                                                .TRsection5LargeIconContainer {
-                                                    img {
-                                                    }
-                                                }
-                                                .TRsection5SmallIconContainer {
-                                                    img {
-                                                    }
-                                                }
-                                            }
-                                            div:nth-child(2) {
-                                            }
-                                            div:nth-child(3) {
-                                                div {
-                                                    .TRsection5Percent {
-                                                    }
-                                                    .TRsection5V3 {
-                                                    }
-                                                }
-                                                .TRsection5ETHContainer {
-                                                    svg {
-                                                    }
-                                                    .TRsection5ETH {
-                                                    }
-                                                }
-                                                .TRsection5BNBContainer {
-                                                    svg {
-                                                    }
-                                                    .TRsection5BNB {
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                td:nth-child(2) {
-                                }
-                                td:nth-child(3) {
-                                }
-                                td:nth-child(4) {
-                                    .TRsection5Cell1Container {
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .TRsection5Pagination {
-                    div:nth-child(1) {
-                        svg {
-                        }
-                    }
-                    div:nth-child(2) {
-                    }
-                    div:nth-child(3) {
-                        svg {
-                        }
-                    }
-                }
-            }
-        }
+
     }
 }
 
@@ -1072,37 +992,41 @@ body {
 @media (max-width: 1080px) {
     // --------------- Section 1 -------------
     .TRsection1 {
-        .section1MovingParts {
-            width: 90%;
-            height: 70%;
-            position: absolute;
-            top: 0%;
-            left: 50%;
-            transform: translateX(-50%);
 
-            img:nth-child(1) {
-                left: 5%;
-            }
-            img:nth-child(3) {
-                left: 10%;
-                bottom: 15%;
-            }
-            img:nth-child(4) {
-                top: 10%;
-                left: 18%;
-            }
-            img:nth-child(5) {
-                left:16%;
-                bottom: 18%;
-            }
-        }
         .section1Container {
             flex-direction: column-reverse;
             .section1Right {
+                .section1MovingParts {
+                    width: 90%;
+                    height: 70%;
+                    position: absolute;
+                    top: 0%;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    img:nth-child(1) {
+                        left: -85%;
+                    }
+                    img:nth-child(2) {
+                        right: -85%;
+                        top: 70%;
+                    }
+                    img:nth-child(3) {
+                        left: -70%;
+                        bottom: -25%;
+                    }
+                    img:nth-child(4) {
+                        top: 10%;
+                        left: -50%;
+                    }
+                    img:nth-child(5) {
+                        z-index:-1;
+                        left:-45%;
+                        bottom: -20%;
+                    }
+                }
                 .section1RightImage {
                     margin: auto;
-                    img {
-                    }
                 }
             }
         }
@@ -1155,10 +1079,6 @@ body {
                 .section2BannerContainer {
                     .section2Banner {
                         padding: 24px;
-                        h2 {
-                        }
-                        button {
-                        }
                     }
                 }
             }
@@ -1240,12 +1160,6 @@ body {
     // --------------- Section 5 -------------
 
     .TRsection5 {
-        .TRrewardsBreakdown {
-        }
-        .TRsection5Interval {
-        }
-        .TRsection5Campaign {
-        }
         .TRsection5ContainerShadow {
             .TRsection5ContainerBackground {
                 .TRsection5TableContainer {
@@ -1284,41 +1198,6 @@ body {
                                         display: flex;
                                         justify-content: space-between;
                                         border: none;
-                                        .TRsection5Cell1Split {
-
-                                            .TRsection5IconContainer {
-                                                .TRsection5LargeIconContainer {
-                                                    img {
-                                                    }
-                                                }
-                                                .TRsection5SmallIconContainer {
-                                                    img {
-                                                    }
-                                                }
-                                            }
-                                            div:nth-child(2) {
-                                            }
-                                            div:nth-child(3) {
-                                                div {
-                                                    .TRsection5Percent {
-                                                    }
-                                                    .TRsection5V3 {
-                                                    }
-                                                }
-                                                .TRsection5ETHContainer {
-                                                    svg {
-                                                    }
-                                                    .TRsection5ETH {
-                                                    }
-                                                }
-                                                .TRsection5BNBContainer {
-                                                    svg {
-                                                    }
-                                                    .TRsection5BNB {
-                                                    }
-                                                }
-                                            }
-                                        }
                                     }
                                 }
                                 td:nth-child(2) {
@@ -1356,22 +1235,8 @@ body {
                                     line-height: 1.5;
                                     font-size: 14px;
                                     padding: 0;
-                                    .TRsection5Cell1Container {
-                                    }
                                 }
                             }
-                        }
-                    }
-                }
-                .TRsection5Pagination {
-                    div:nth-child(1) {
-                        svg {
-                        }
-                    }
-                    div:nth-child(2) {
-                    }
-                    div:nth-child(3) {
-                        svg {
                         }
                     }
                 }
@@ -1389,30 +1254,12 @@ body {
         display: flex;
         justify-content: flex-start;
 
-        .toolbarItem {
-            a {
-            }
-        }
-        .toolbarItemSelected {
-            a {
-            }
-        }
+
     }
 
     // --------------- Section 1 -------------
     .TRsection1 {
-        .section1MovingParts {
-            height: 60%;
-            img:nth-child(4) {
-                width: 66px;
-                height: 48px;
-                left: 28%;
-                top: 20%;
-            }
-            img:nth-child(5) {
-                display: none;
-            }
-        }
+
         .section1Container {
             .section1Left {
                 width: 100%;
@@ -1423,14 +1270,20 @@ body {
                     font-size: 16px;
                     line-height: 1.5;
                 }
-                div:nth-child(4) {
-                    a:nth-child(1) {
-                    };
-                    a:nth-child(2) {
-                    }
-                }
             }
             .section1Right {
+                .section1MovingParts {
+                    height: 60%;
+                    img:nth-child(4) {
+                        width: 66px;
+                        height: 48px;
+                        left: 28%;
+                        top: 20%;
+                    }
+                    img:nth-child(5) {
+                        display: none;
+                    }
+                }
                 .section1RightImage {
                     img {
                         width: 175px;
@@ -1491,18 +1344,7 @@ body {
 
 // ~~~~~~~~~~~~~~~~~~~~~ 576p ~~~~~~~~~~~~~~~~~~~~
 @media (max-width: 576px) {
-    // --------------- Toolbar ---------------
 
-    .toolbar {
-        .toolbarItem {
-            a {
-            }
-        }
-        .toolbarItemSelected {
-            a {
-            }
-        }
-    }
 
     // --------------- Section 1 -------------
     .TRsection1 {
@@ -1513,7 +1355,6 @@ body {
         }
     }
 }
-
 
 // ~~~~~~~~~~~~~~~~~~~~~ 370p ~~~~~~~~~~~~~~~~~~~~
 @media (max-width: 370px) {
