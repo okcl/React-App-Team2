@@ -11,7 +11,7 @@ function HomePage() {
     useEffect(() => {
         const id = setInterval(() => {
           setTopSection((prevSection) => (prevSection === "farms" ? "syrup" : "farms"));
-        }, 4000);
+        }, 7000);
 
         setIntervalId(id);
     
@@ -26,7 +26,7 @@ function HomePage() {
     
         const id = setInterval(() => {
           setTopSection((prevSection) => (prevSection === "farms" ? "syrup" : "farms"));
-        }, 4000);
+        }, 7000);
 
         setIntervalId(id);
       };
