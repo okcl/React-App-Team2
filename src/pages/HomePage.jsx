@@ -236,7 +236,7 @@ function HomePage() {
                                         <div className="fgbox-bot">APR</div>
                                     </div>
                                     <div className={topSection !== "farms" ? ("farmsg-box") : ("farmsg-box-h")}>
-                                        <div className="fgbox-top">unshETH-USDT LP v3</div>
+                                        <div className="fgbox-top">Stake CAKE LP v3</div>
                                         <div className="fgbox-mid">
                                             <div className="fgbox-mid-wrap">
                                                 <span><CountUp end={4745.376} duration={5} decimals={3}/>%</span>
