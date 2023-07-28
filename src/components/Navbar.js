@@ -1,5 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 import React from 'react';
+import ExchangeRate from './ExchangeRate';
+
+
 
 function Navbar() {
     const location = useLocation();
@@ -7,6 +10,10 @@ function Navbar() {
     const IFOLocation = location.pathname === '/ifo'
     const lotteryLocation = location.pathname === '/lottery'
     const poolsLocation = location.pathname === '/pools'
+
+
+
+
   return (
     <div>
       <header className="nav">
@@ -82,7 +89,7 @@ function Navbar() {
                   <div className="nav-currentprice">
                     <Link to="/">
                       <img src="/assets/svgexport-6.svg" alt="" style={{width:24}}/>
-                      <div className="text-currency">$3.657</div>
+                      <div className="text-currency"><ExchangeRate /></div>
                     </Link>
                   </div>
                   <div className="nav-language">
