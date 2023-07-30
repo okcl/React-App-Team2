@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import ThemeSelect from './ThemeSelect';
 import { animateScroll as scroll } from 'react-scroll';
 import { useEffect, useState } from 'react';
+import ExchangeRate from './ExchangeRate';
 
 const ScrollToTopButton = () => {
     const [showButton, setShowButton] = useState(false);
@@ -175,7 +176,7 @@ function Footer() {
                             <div className="currency-price">
                                 <Link to="#">
                                     <img src="/assets//svgexport-6.svg" alt="" style={{width: 24}}/>
-                                    <div className="text-currency">$3.657</div>
+                                    <div className="text-currency"><ExchangeRate /></div>
                                 </Link>
                             </div>
                             <Link to="#" className="buy-btn">Buy CAKE
