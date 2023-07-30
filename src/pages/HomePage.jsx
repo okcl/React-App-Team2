@@ -151,7 +151,9 @@ function HomePage() {
                 </div>
             </section>
             <div className="divisor">
-                <img src="/assets/svgexport-28.svg" alt=""/>
+                <svg viewBox="0 0 1660 48" preserveAspectRatio="none" color="text" width="1660" xmlns="http://www.w3.org/2000/svg" height="48" >
+                    <path d="M1660 48C1139.02 46.1887 336.256 15.2453 0 0H1660V48Z" fill="var(--colors-background)"></path>
+                </svg>
             </div>
 
             <section id="part-3" className="grid-desktop flex-col-mobile">
@@ -181,7 +183,7 @@ function HomePage() {
             </section>
             <section id="part-4">
                 <div className="divisor">
-                    <img src="/assets/svgexport-30.svg" alt=""/>
+                <svg viewBox="0 0 1660 48" preserveAspectRatio="none" color="text" width="1660" xmlns="http://www.w3.org/2000/svg" class="sc-4ba21b47-0 IIbzK" height="48" ><path d="M-346 48C174.985 46.1887 977.744 15.2453 1314 0H-346V48Z" fill="var(--colors-background)"></path></svg>
                 </div>
                 <div className="part-4-wrapper">
                     <div className="animated-imgs-wrapper">
