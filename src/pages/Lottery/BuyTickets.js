@@ -4,14 +4,10 @@ export function BuyTickets(){
     const [isOpen, setIsOpen] = useState(false);
  
   return (
-    <div>
-      <button className="buttom" onClick={() => setIsOpen(true)}><b>Buy Tickets</b></button>
- 
-      {isOpen && (
        <div className="buyTickets">
         <div className="buyTickets2">
           <div id="buyTickHeader">
-            <h2>Buy Tickets</h2>
+            <h2 >Buy Tickets</h2>
             <button id="closeCross" onClick={() => setIsOpen(false)}><img src="assets/cross.svg" alt=''/></button>
           </div>
           <div id="buyTickCenter">
@@ -73,7 +69,4 @@ export function BuyTickets(){
          </div>
        </div>
        </div>
-      )}
-    </div>
-  );
-}
+  )}
