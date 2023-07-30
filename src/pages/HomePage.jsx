@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import CountUp from "react-countup"
 import TheCountUp from "../components/CountUp";
 
 function HomePage() {
+
+    const [topSection, setTopSection] = useState("farms");
+    const [intervalId, setIntervalId] = useState(null);
+
+    useEffect(() => {
+        const id = setInterval(() => {
+          setTopSection((prevSection) => (prevSection === "farms" ? "syrup" : "farms"));
+        }, 7000);
+
+        setIntervalId(id);
+    
+        return () => clearInterval(id);
+      }, []);
+    
+      const handleTSectionButtonClick = () => {
+
+        clearInterval(intervalId);
+    
+        setTopSection((prevSection) => (prevSection === "farms" ? "syrup" : "farms"));
+    
+        const id = setInterval(() => {
+          setTopSection((prevSection) => (prevSection === "farms" ? "syrup" : "farms"));
+        }, 7000);
+
+        setIntervalId(id);
+      };
+
     return(
         <div>
             <section className="part-1">
@@ -184,75 +212,120 @@ function HomePage() {
                         <div className="part5">
                             <div className="title5">
                                 <h2>
-                                    Top
-                                    <span style={{color: '#7645d9'}}>Farms</span>
+                                    Top 
+                                    <span style={{color: '#7645d9'}}>{topSection === "farms" ? (
+                                        " Farms"
+                                    ) : (
+                                        " Syrup Pools"
+                                    )}</span>
                                 </h2>
-                                <button className="switch5">
+                                <button onClick={() => {handleTSectionButtonClick()}} className="switch5">
                                     <img src="/assets/svgexport-31.svg" alt="switch"/>
                                 </button>
                             </div>
                             <div className="content5">
-                                <div className="farms">
-                                    <div className="farmsg">
-
-                                        <div className="farmsg-box">
-                                            <div className="fgbox-top">unshETH-USDT LP v3</div>
-                                            <div className="fgbox-mid">
-                                                <div className="fgbox-mid-wrap">
-                                                    <span><b><TheCountUp end={4745.376} duration={5}/>%</b></span>
-                                                </div>
+                            <div className="farms">
+                                <div className="farmsg">
+                                    <div className={topSection === "farms" ? ("farmsg-box") : ("farmsg-box-h")}>
+                                        <div className="fgbox-top">unshETH-USH LP v3</div>
+                                        <div className="fgbox-mid">
+                                            <div className="fgbox-mid-wrap">
+                                                <span><CountUp end={2038.160} duration={5} decimals={3}/>%</span>
                                             </div>
-                                            <div className="fgbox-bot">APR</div>
                                         </div>
+                                        <div className="fgbox-bot">APR</div>
                                     </div>
-                                    <div className="farmsg">
-
-                                        <div className="farmsg-boxb">
-                                            <div className="fgbox-top">PSTAKE-CAKE LP v3</div>
-                                            <div className="fgbox-mid">
-                                                <div className="fgbox-mid-wrap">
-                                                    <span><b><TheCountUp end={1107.765} duration={5}/>%</b></span>
-                                                </div>
+                                    <div className={topSection !== "farms" ? ("farmsg-box") : ("farmsg-box-h")}>
+                                        <div className="fgbox-top">Stake CAKE LP v3</div>
+                                        <div className="fgbox-mid">
+                                            <div className="fgbox-mid-wrap">
+                                                <span><CountUp end={4745.376} duration={5} decimals={3}/>%</span>
                                             </div>
-                                            <div className="fgbox-bot">APR</div>
                                         </div>
-                                    </div>
-                                    <div className="farmsg">
-
-                                        <div className="farmsg-boxb">
-                                            <div className="fgbox-top">stkBNB-BNB LP v3</div>
-                                            <div className="fgbox-mid">
-                                                <div className="fgbox-mid-wrap">
-                                                    <span><b><TheCountUp end={529.521} duration={5}/>%</b></span>
-                                                </div>
-                                            </div>
-                                            <div className="fgbox-bot">APR</div>
-                                        </div>
-                                    </div>
-                                    <div className="farmsg">
-
-                                        <div className="farmsg-boxb">
-                                            <div className="fgbox-top">unshETH-USH LP v3</div>
-                                            <div className="fgbox-mid">
-                                                <div className="fgbox-mid-wrap">
-                                                    <span><b><TheCountUp end={237.578} duration={5}/>%</b></span>
-                                                </div>
-                                            </div>
-                                            <div className="fgbox-bot">APR</div>
-                                        </div>
-                                    </div>
-                                    <div className="farmsg">
-                                        <div className="farmsg-boxb">
-                                            <div className="fgbox-top">MGP-BNB LP v3</div>
-                                            <div className="fgbox-mid">
-                                                <div className="fgbox-mid-wrap">
-                                                    <span><b><TheCountUp end={197.588} duration={5}/>%</b></span>
-                                                </div>
-                                            </div>
-                                            <div className="fgbox-bot">APR</div>
-                                        </div>
+                                        <div className="fgbox-bot">APR</div>
                                     </div>
                                 </div>
+                                <div className="farmsg">
+                                    <div className={topSection === "farms" ? ("farmsg-boxb") : ("farmsg-boxb-h")}>
+                                        <div className="fgbox-top">EQB-BNB LP v3</div>
+                                        <div className="fgbox-mid">
+                                            <div className="fgbox-mid-wrap">
+                                                <span><CountUp end={320.163} duration={5} decimals={3}/>%</span>
+                                            </div>
+                                        </div>
+                                        <div className="fgbox-bot">APR</div>
+                                    </div>
+                                    <div className={topSection !== "farms" ? ("farmsg-boxb") : ("farmsg-boxb-h")}>
+                                        <div className="fgbox-top">Stake CAKE - Earn SABLE</div>
+                                        <div className="fgbox-mid">
+                                            <div className="fgbox-mid-wrap">
+                                                <span><CountUp end={23.345} duration={5} decimals={3}/>%</span>
+                                            </div>
+                                        </div>
+                                        <div className="fgbox-bot">APR</div>
+                                    </div>
+                                </div>
+                                <div className="farmsg">
+                                    <div className={topSection === "farms" ? ("farmsg-boxb") : ("farmsg-boxb-h")}>
+                                        <div className="fgbox-top">SABLE-BNB LP</div>
+                                        <div className="fgbox-mid">
+                                            <div className="fgbox-mid-wrap">
+                                                <span><CountUp end={160.503} duration={5} decimals={3}/>%</span>
+                                            </div>
+                                        </div>
+                                        <div className="fgbox-bot">APR</div>
+                                    </div>
+                                    <div className={topSection !== "farms" ? ("farmsg-boxb") : ("farmsg-boxb-h")}>
+                                        <div className="fgbox-top">Stake CAKE - Earn AXL</div>
+                                        <div className="fgbox-mid">
+                                            <div className="fgbox-mid-wrap">
+                                                <span><CountUp end={5.398} duration={5} decimals={3}/>%</span>
+                                            </div>
+                                        </div>
+                                        <div className="fgbox-bot">APR</div>
+                                    </div>
+                                </div>
+                                <div className="farmsg">
+                                    <div className={topSection === "farms" ? ("farmsg-boxb") : ("farmsg-boxb-h")}>
+                                        <div className="fgbox-top">METIS-BNB LP</div>
+                                        <div className="fgbox-mid">
+                                            <div className="fgbox-mid-wrap">
+                                                <span><CountUp end={124.715} duration={5} decimals={3}/>%</span>
+                                            </div>
+                                        </div>
+                                        <div className="fgbox-bot">APR</div>
+                                    </div>
+                                    <div className={topSection !== "farms" ? ("farmsg-boxb") : ("farmsg-boxb-h")}>
+                                        <div className="fgbox-top">Stake CAKE - Earn CSIX</div>
+                                        <div className="fgbox-mid">
+                                            <div className="fgbox-mid-wrap">
+                                                <span><CountUp end={4.545} duration={5} decimals={3}/>%</span>
+                                            </div>
+                                        </div>
+                                        <div className="fgbox-bot">APR</div>
+                                    </div>
+                                </div>
+                                <div className="farmsg">
+                                    <div className={topSection === "farms" ? ("farmsg-boxb") : ("farmsg-boxb-h")}>
+                                        <div className="fgbox-top">SQUAD-CAKE LP</div>
+                                        <div className="fgbox-mid">
+                                            <div className="fgbox-mid-wrap">
+                                                <span><CountUp end={101.041} duration={5} decimals={3}/>%</span>
+                                            </div>
+                                        </div>
+                                        <div className="fgbox-bot">APR</div>
+                                    </div>
+                                    <div className={topSection !== "farms" ? ("farmsg-boxb") : ("farmsg-boxb-h")}>
+                                        <div className="fgbox-top">Stake CAKE - Earn xALGO</div>
+                                        <div className="fgbox-mid">
+                                            <div className="fgbox-mid-wrap">
+                                                <span><CountUp end={4.483} duration={5} decimals={3}/>%</span>
+                                            </div>
+                                        </div>
+                                        <div className="fgbox-bot">APR</div>
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>
