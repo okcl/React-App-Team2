@@ -14,9 +14,9 @@ export default function ShowDetails() {
   return ( 
     <div>
       <div>
-      <button className="details"onClick={handleClick}>{ active ? "Hide" : "Details"}<img src={active ? "assets/detailsarrowup.svg" : "assets/detailsarrowdown.svg"} alt=""/></button>
-      </div>
       {isShown && <DetailsDiv4 />}
+      <button className="details" id="detailsDiv4" onClick={handleClick}>{ active ? "Hide" : "Details"}<img src={active ? "assets/detailsarrowup.svg" : "assets/detailsarrowdown.svg"} alt=""/></button>
+      </div>
     </div>
   );
 }
