@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { Lottery } from "./Lottery";
 
 export function BuyTickets(){
     const [isOpen, setIsOpen] = useState(false);
- 
+     
+
   return (
     <div>
       <button className="buttom" onClick={() => setIsOpen(true)}><b>Buy Tickets</b></button>

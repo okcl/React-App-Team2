@@ -51,7 +51,7 @@ export function AllHistory(){
                </div>
          </div>
            <div class="tablebottom">
-              <ShowDetails/>
+           <button className="details" id="detailsDiv4" >Details<img src="assets/detailsarrowdown.svg" alt=""/></button>
            </div>
   </div>
     )
