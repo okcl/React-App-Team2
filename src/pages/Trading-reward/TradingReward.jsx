@@ -45,12 +45,12 @@ const TradingReward = () => {
             {/* --------------- Toolbar ----------------- */}
             <section className="toolbar">
                 <div className="toolbarItemSelected">
-                    <a href="#">Trading Reward</a>
+                    <a href="#">CAKE Stakers</a>
                 </div>
                 <div className="toolbarItem">
-                    <a href="#">Trading Competition</a>
+                    <a href="#">Top Traders</a>
                 </div>
-                <div className="toolbarItem">
+                {/* <div className="toolbarItem">
                     <a href="#">Prediction (BETA)</a>
                 </div>
                 <div className="toolbarItem">
@@ -58,7 +58,7 @@ const TradingReward = () => {
                 </div>
                 <div className="toolbarItem">
                     <a href="#">Pottery (BETA)</a>
-                </div>
+                </div> */}
             </section>
             {/* ---------------- Section 1 --------------- */}
             <section className="TRsection1">
