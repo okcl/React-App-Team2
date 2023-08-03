@@ -5,16 +5,27 @@ footer {
     padding: 3.5rem 2.5rem 2rem;
     background-color: #27262c;
     text-decoration: none;
-    @media screen and (max-width: 993px) {
-        margin-bottom: 60px;
-      }
-    }
-
-footer .footer-wrapper {
+  }
+  
+  /* Set the width of the footer to a percentage value */
+  footer .footer-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    width: min(1200px, 90vw);
-}
+    width: 90%; /* You can use a percentage value that suits your layout */
+  }
+  
+  /* Apply different styles when the screen width is below 993px */
+  @media screen and (max-width: 993px) {
+    footer {
+      margin-bottom: 60px;
+    }
+  
+    /* Adjust the width for smaller screens */
+    footer .footer-wrapper {
+      width: 90%; /* You can adjust this percentage based on your design requirements */
+    }
+  }
+  
     /* Part 9 */
     #links-footer {
         display: flex;
@@ -98,6 +109,9 @@ footer .footer-wrapper {
             width: 20px;
             align-self: center;
             flex-shrink: 0;
+            @media screen and (max-width: 576px){
+                width: 15px;
+            }
         }
     }
 }
