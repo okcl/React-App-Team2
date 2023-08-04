@@ -1,10 +1,31 @@
+# Pancakeswap project team-2
+
+
+### Contributors ⬇️⬇️⬇️
+## Ovidiu Radu  -->  [GitHub](https://github.com/Oxidiu) | [LinkedIn](https://www.linkedin.com/in/ovidiu-iulian-radu-485518160/)
+
+## Anna Zhykol   -->  [GitHub](https://github.com/AnnZhy1309) | [LinkedIn](https://www.linkedin.com/in/anna-zhykol-465a22207/)
+
+## Oğuzhan Akçalı --> [GitHub](https://github.com/okcl) | [LinkedIn](https://www.linkedin.com/in/oguzhanakcali/)
+.
 
 
 
 
 
-# Pancakeswap project
+.
 
+
+
+
+
+
+
+.
+
+
+.
+---
 1. [About Trello](#trello)
 2. [Developing landing page](#app-html)
 3. [How to work with branches](#branches)
@@ -19,11 +40,9 @@ You need to join trello from the link at discord
 
 
 ## You choose the task that you wanted to do from to-do list and click it
-![trello main page](https://i.imgur.com/Jn7S9PG.png)
 
 
-## You have to click join to claim the task and start working on it.
-![trello task selection](https://i.imgur.com/Og2dl6L.png)
+ You have to click join to claim the task and start working on it.
 
 ---
 
