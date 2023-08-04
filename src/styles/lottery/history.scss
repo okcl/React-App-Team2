@@ -517,7 +517,6 @@ hr{
         background-color: var(--colors-background);
         width: 750px;
         height: auto;
-        
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
         border-top: 1px solid var(--colors-inputSecondary);
@@ -615,6 +614,7 @@ hr{
           padding-right: 0px;
         }
         .match p{
+
           font-size: 12px;
           text-align: left;
           display: flex;
@@ -661,4 +661,4 @@ hr{
     font-size: small;
 
    }
-   
+

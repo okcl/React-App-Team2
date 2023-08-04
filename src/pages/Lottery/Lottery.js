@@ -7,12 +7,12 @@ import { SwitchHistory } from "./SwitchHistory";
 import { useState } from "react";
 
 export function Lottery(){
+    const [isOpen, setIsOpen] = useState(false);
     return (
    <div id="App">
     
         <div id="div1"   Style = {{ backgroundImage: "assets/bg-star.svg",
    }}>
-
            <div id="images11">
              <img src="assets/star-big.png" className="images1" id="bigstar" alt=""/>
              <img src="assets/star-small.png" className="images1" id="smallstar"/>
@@ -33,8 +33,7 @@ export function Lottery(){
              <img src="assets/three-stars.png" className="images1" id="threestars"/>
              <img src="assets/ticket-r.png" className="images1" id="ticketr"/>
            </div>
-
-        </div>
+    </div>
         <div id="div2">
             <div id="div2header"><h2>Get your tickets now!</h2></div>
                <div id="div2linetime">
@@ -69,12 +68,12 @@ export function Lottery(){
                      <BuyTickets/>
                      </div>
                  </div>
-             </div>
              <div id="bottomframe">
                  <ShowDetailsDiv2/>
              </div>
+             </div>
            </div>
-          </div>
+           </div>
         </div>
         <div id="div3">
             <img src="assets/ticket-l.png" id="div3leftticket" className="div3img"/>
@@ -89,8 +88,6 @@ export function Lottery(){
              <h2 id="finishedround">Finished Rounds</h2>
            <SwitchHistory/>
         </div>
-
-
         <div id="div5">
            <div id="div5content">
              <div id="div5top">

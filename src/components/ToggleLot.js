@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactSwitch from 'react-switch';
-import '../styles/lottery/Toggle.css'
+import '../styles/lottery/Toggle.scss'
 
 export function ToggleSwitch(){  
   const[toggle, setToggle] = useState(false);
