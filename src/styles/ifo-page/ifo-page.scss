@@ -1,11 +1,3 @@
-/* GLOBAL */
-@import '../global/global.scss';
-
-/* NAVBAR */
-@import '../mainpage/navbar.scss';
-
-/* FOOTER */
-@import '../mainpage/footer.scss';
 
 /* IFO WEBPAGE */
 
@@ -125,7 +117,7 @@
 
             .info-page {
                 width: 100%;
-                background-image: url(public/assets/ifo-banner-light.png);
+                background-image: url(../../../public/assets/ifo-banner-light.png);
                 background-position: center top, center center;
                 background-size: auto 100%;
                 background-repeat: no-repeat;
@@ -153,7 +145,7 @@
                         align-items: flex-end;
                         font-size: 0.8rem;
                         line-height: 1.5;
-                        
+
                         a {
                             box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
                             font-size: 1rem;
@@ -201,7 +193,7 @@
         .stake {
             grid-area: stake;
             @include main-box-style;
-
+            margin-bottom: 25px;
             .box-header {
                 background: var(--colors-gradientCardHeader);
 
@@ -272,7 +264,7 @@
                                 font-size: 1rem;
                             }
 
-                            
+
                         }
                     }
                 }
@@ -320,7 +312,7 @@
                         border-radius: 16px;
                         padding: 0 0.5rem;
                     }
-                
+
                 }
             }
 
@@ -358,7 +350,7 @@
                             align-items: center;
                             gap: 0.25rem;
                             color: var(--colors-primary);
-                            
+
                             img {
                                 width: 14px;
                             }
@@ -370,7 +362,7 @@
                 }
             }
         }
-        
+
         .coming-soon {
             grid-area: coming;
             background: var(--colors-cardBorder);
@@ -378,7 +370,7 @@
             height: fit-content;
 
             .box-header {
-                background-image: url(/assets/ifo-coming-soon-desktop.png);
+                background-image: url(../../../public/assets/ifo-coming-soon-desktop.png);
                 border-top-left-radius: 24px;
                 border-top-right-radius: 24px;
                 border-bottom-left-radius: 100% 40px;
@@ -395,7 +387,7 @@
                 padding: 1.5rem;
                 gap: 32px;
                 border-radius: 24px;
-                
+
                 & > div {
                     max-width: 368px;
 
@@ -477,7 +469,7 @@
                     font-size: 1rem;
                     color: var(--colors-text);
                 }
-                
+
                 img {
                     width: 80px;
                     height: 80px;
@@ -534,7 +526,7 @@
 
                 &.two,
                 &.four {
-                    grid-template-areas: 
+                    grid-template-areas:
                     "description step .";
                 }
 
@@ -548,14 +540,14 @@
                     align-items: center;
 
                     .step-line {
-                        width: 4px; 
+                        width: 4px;
                         height: calc(50% + 20px);
                         background-color: var(--colors-textDisabled);
                         position: absolute;
                         top: 0;
                         left: calc(50% - 2px);
 
-                        &.activated {  
+                        &.activated {
                             top: 50%;
                             background-color: var(--colors-success);
                         }
@@ -715,3 +707,135 @@
         }
     }
 }
+
+//================= MEDIA QUERIES =================
+
+// ~~~~~~~~~~~~~~~~~~~~~ 1200p ~~~~~~~~~~~~~~~~~~~~
+@media (max-width: 1200px) {
+    #ifo {
+
+        #ifo-main-section {
+
+            .coming-soon {
+
+                .box-body {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+
+// ~~~~~~~~~~~~~~~~~~~~~ 1080p ~~~~~~~~~~~~~~~~~~~~
+@media (max-width: 1080px) {
+    #ifo {
+
+        #ifo-main-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .stake {
+                max-width: 400px;
+            }
+            .token-vesting {
+                max-width: 400px;
+            }
+            .coming-soon {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~ 852p ~~~~~~~~~~~~~~~~~~~~
+@media (max-width: 852px) {
+    #ifo {
+        header {
+            .main-header-wrapper {
+
+                .info-page {
+
+                    .info-page-wrapper {
+
+                        h1 {
+                            font-size: 40px;
+                            margin-bottom: 16px;
+                        }
+
+                        .more-info {
+                            flex-direction: column;
+                            align-items: start;
+                            vertical-align: baseline;
+                            line-height: 1.5;
+                            h2 {
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 2;
+                            }
+                            a {
+                                background-color: var(--colors-tertiary);
+                                color: var(--colors-primary);
+                                padding: 4px 13px;
+                                height: auto;
+                                text-transform: uppercase;
+
+                                font-size: 12px;
+                                box-shadow: var(--shadows-inset);
+                                border-radius: 8px;
+                                margin-left: 8px;
+                                line-height: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #take-part {
+            .take-part-steps {
+                display: flex;
+                flex-direction: column;
+
+                & > div {
+                    grid-template-columns: 0 40px 1fr;
+                    grid-template-areas:
+                    ". step description";
+
+                    &.one {
+
+                        margin-bottom: 18px;
+                    }
+                    &.three {
+                        margin-bottom: 18px;
+
+                    }
+                    &.two,
+                    &.four {
+                        grid-template-areas:
+                        ". step description";
+                        margin-bottom: 18px;
+
+                    }
+
+                    .step {
+
+                        p {
+                            font-size: 32px;
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+                }
+            }
+        }
+        #details {
+
+            .details-section-wrapper {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
