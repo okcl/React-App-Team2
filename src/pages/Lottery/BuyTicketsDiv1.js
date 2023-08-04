@@ -2,11 +2,20 @@ import { useState } from "react";
 
 export function BuyTicketsDiv1(){
     const [isOpen, setIsOpen] = useState(false);
- 
+    var containerElement = document.getElementById('App');
+   
+    const handleClick = () =>{
+      /* state can be 1 or 0 */
+      setIsOpen(true);
+      containerElement.setAttribute( 'class', 'blur');
+  };
+
   return (
-    <div>
-      <button className="buttom" id="buyticketsbuttom1" onClick={() => setIsOpen(true)}>Buy tickets</button>
- 
+    <div class="container-lot">
+    <div class="content-window">
+      <button className="buttom" id="buyticketsbuttom1" onClick={()=>
+      handleClick()
+      }>Buy tickets</button>
       {isOpen && (
        <div className="buyTickets">
         <div className="buyTickets2">
@@ -54,7 +63,7 @@ export function BuyTicketsDiv1(){
                   Bulk discount
                 </p>
                 <div>
-                  <img src="assets/questionMsrk.svg"/>
+                  <img src="assets/questionMark.svg"/>
                 </div>
               </div>
               <p id="tickLine4right">
@@ -75,7 +84,8 @@ export function BuyTicketsDiv1(){
          </div>
        </div>
        </div>
-      )}
-    </div>
+       )}
+       </div>
+       </div>
   );
 }

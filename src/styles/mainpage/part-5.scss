@@ -12,6 +12,7 @@
             flex-direction: column;
             margin-top: 24px;
             width: 100%;
+            margin-bottom: 1.5rem;
             .title5{
                 height: 28px;
                 display: flex;
@@ -20,7 +21,7 @@
                     font-size: 20px;
                     font-weight: 600;
                     line-height: 1.1;
-                    color: var(--color-text);
+                    color: var(--colors-text);
                 }
                 .switch5{
                     padding: 2px;
@@ -83,12 +84,15 @@
                                 color: var(--colors-secondary);
                                 font-weight: 600;
                                 line-height: 1.1;
-                                margin-bottom: 8px;
                                 font-size: 12px;
+                                @media screen and (min-width: 576px) {
+                                    margin-bottom: 8px;
+                                }
                             }
                             .fgbox-mid{
                                 gap: 4px;
                                 display: flex;
+                                color: var(--colors-white);
     
                                 .fxbox-mid-wrap{
                                     text-decoration: none;
@@ -109,14 +113,66 @@
                             @extend .farmsg-box;
                             @media screen and (min-width: 576px) {
                                 border-left: 1px var(--colors-inputSecondary) solid;
-                            }
+                        }
                             
+                        }
+                        .farmsg-box-h{
+                            position: absolute;
+                            top: 0px;
+                            opacity: 0;
+                            margin-top: 50%;
+                            transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+                            flex-direction: column;
+                            padding-left: 16px;    
+                            .fgbox-top{
+                                height: 30px; 
+                                color: var(--colors-secondary);
+                                font-weight: 600;
+                                line-height: 1.1;
+                                font-size: 12px;
+                                @media screen and (min-width: 576px) {
+                                    margin-bottom: 8px;
+                                }
+                            }
+                            .fgbox-mid{
+                                gap: 4px;
+                                display: flex;
+    
+                                .fxbox-mid-wrap{
+                                    text-decoration: none;
+                                    color: #280d5f;
+                                    font-weight: 600;
+                                    line-height: 1.1;
+                                    font-size: 16px;
+                                }
+                            }
+                            .fgbox-bot{
+                                color: var(--colors-textSubtle);
+                                font-weight: 400;
+                                line-height: 1.5;
+                                font-size: 16px;
+                            }    
+                        }
+                        .farmsg-boxb-h{
+                            @extend .farmsg-box-h;
+                            @media screen and (min-width: 576px) {
+                                border-left: 1px var(--colors-inputSecondary) solid;
+                                margin-bottom: 8px;
+                        }
                         }
                         
                     }
                 }
             }
         }
+    }
+}
+
+.fgbox-mid-wrap{
+    span{
+        color: var(--colors-text);
+        font-weight: 600;
+        line-height: 1.1;
     }
 }
 

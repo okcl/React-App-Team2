@@ -1,35 +1,33 @@
 import TheCountUp from "../../components/CountUp";
 import { BuyTickets } from "./BuyTickets";
 import { BuyTicketsDiv1 } from "./BuyTicketsDiv1";
+import  ShowDetails  from "./ShowDetails";
 import ShowDetailsDiv2 from "./ShowDetailsDiv2";
 import { SwitchHistory } from "./SwitchHistory";
-
-import background from './bg-star.svg';
-
 import { useState } from "react";
 
 export function Lottery(){
     const [isOpen, setIsOpen] = useState(false);
     return (
-   <div className="App">
+   <div id="App">
     
-    <div id="div1" style={{"--img": `url(background)`,
-                            background: "linear-gradient(rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%)"}}>
+        <div id="div1"   Style = {{ backgroundImage: "assets/bg-star.svg",
+   }}>
            <div id="images11">
              <img src="assets/star-big.png" className="images1" id="bigstar" alt=""/>
              <img src="assets/star-small.png" className="images1" id="smallstar"/>
              <img src="assets/ticket-l.png" className="images1" id="ticketl"/>
            </div>
+
            <div id="div1content">
               <h1 id="div1h11">The PancakeSwap Lottery</h1>
               <p id="div1price">$<TheCountUp end={44294} duration={2}/></p>
               <h1 id="div1h12">in prizes!</h1>
               <div id="buyticketsbuttom">
-              <img src="assets/ticket.svg" id="backticket"/>
-              <button className="buttom" id="buyticketsbuttom1">Buy tickets</button>
+                 <img src="assets/ticket.svg" id="backticket"/>
+                 <button className="buttom" id="buyticketsbuttom1">Buy tickets</button>
+              </div>
            </div>
-    </div>
-           
 
            <div id="images12">
              <img src="assets/three-stars.png" className="images1" id="threestars"/>
@@ -67,12 +65,7 @@ export function Lottery(){
                      </div>
                      <p id="yourticketstext">Your tickets</p>
                      <div id="prizepotbutton">
-                     <div>
-                        <button className="buttom" onClick={() => 
-                          setIsOpen(true)}><b>Buy Tickets</b>
-                        </button>
-                           {isOpen && <BuyTickets/>}
-                     </div>
+                     <BuyTickets/>
                      </div>
                  </div>
              <div id="bottomframe">
@@ -91,11 +84,9 @@ export function Lottery(){
             </div>
             <img src="assets/ticket-r.png" id="div3rightticket" className="div3img"/>
         </div>
-        <div id="div41">
-             <div id="div4">
-                  <h2 id="finishedround">Finished Rounds</h2>
-                <SwitchHistory/>
-             </div>
+        <div id="div4">
+             <h2 id="finishedround">Finished Rounds</h2>
+           <SwitchHistory/>
         </div>
         <div id="div5">
            <div id="div5content">
@@ -254,6 +245,6 @@ export function Lottery(){
             </div>
            </div>
         </div>
-   </div>
+      </div>
  );
 }

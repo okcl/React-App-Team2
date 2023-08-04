@@ -5,13 +5,27 @@ footer {
     padding: 3.5rem 2.5rem 2rem;
     background-color: #27262c;
     text-decoration: none;
-    }
-
-footer .footer-wrapper {
+  }
+  
+  /* Set the width of the footer to a percentage value */
+  footer .footer-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    width: min(1200px, 90vw);
-}
+    width: 90%; /* You can use a percentage value that suits your layout */
+  }
+  
+  /* Apply different styles when the screen width is below 993px */
+  @media screen and (max-width: 993px) {
+    footer {
+      margin-bottom: 60px;
+    }
+  
+    /* Adjust the width for smaller screens */
+    footer .footer-wrapper {
+      width: 90%; /* You can adjust this percentage based on your design requirements */
+    }
+  }
+  
     /* Part 9 */
     #links-footer {
         display: flex;
@@ -74,7 +88,7 @@ footer .footer-wrapper {
     margin-top: 32px;
     display: flex;
     order: 2;
-    border-bottom: 1px solid var(--colors-contrast);
+    border-bottom: 1px solid var(--colors-cardBorder);
     padding-bottom: 42px;
     margin-bottom: 0px;
     @media screen and (min-width: 576px) {
@@ -95,6 +109,9 @@ footer .footer-wrapper {
             width: 20px;
             align-self: center;
             flex-shrink: 0;
+            @media screen and (max-width: 576px){
+                width: 15px;
+            }
         }
     }
 }
@@ -169,7 +186,7 @@ footer .footer-wrapper {
                     opacity: 0.65;
                 }
                 div {
-                    color: #b8add2;
+                    color: var(--colors-light-textSubtle);
                     font-weight: 400;
                     line-height: 1.5;
                     font-size: 16px;
@@ -227,7 +244,7 @@ footer .footer-wrapper {
                 min-height: 32px;
                 height: auto;
                 div {
-                  color: #b8add2;
+                  color: var(--colors-light-textSubtle);
                   font-weight: 400;
                   line-height: 1.5;
                   font-size: 16px;
@@ -235,7 +252,7 @@ footer .footer-wrapper {
             }
               
                 &::-webkit-scrollbar-thumb {
-                    background: #b8add2;
+                    background: var(--colors-light-textSubtle);
                     border-radius: 8px;
                 }
                 &::-webkit-scrollbar-track {
@@ -283,7 +300,7 @@ footer .footer-wrapper {
             }
           }
           .text-currency {
-            color: #b8add2;
+            color: var(--colors-light-textSubtle);
             font-weight: 600;
             line-height: 1.5;
             font-size: 16px;
@@ -456,7 +473,8 @@ footer .footer-wrapper {
     border-radius: 1rem;
     box-shadow: inset 0px -1px 0px 0px rgb(14 14 44 / 40%);
     font: 600 16px / 1 'Kanit';
-    color: #FFFFFF;
+    color: var(--colors-invertedContrast);
+    fill: var(--colors-invertedContrast);
     letter-spacing: 0.03em;
     position: fixed;
     bottom: 4.5rem;
@@ -470,4 +488,8 @@ footer .footer-wrapper {
     &:hover{
         opacity: 0.65;
     }
+}
+
+.go-top-btn:hover{
+    opacity: 0.65;
 }

@@ -1,8 +1,18 @@
+
+
+.blur{
+  position:absolute;
+  top:0;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,0.5);
+  display:none;
+}
+
+
+
 .buyTickets{
-  width: 100vw;
   min-height: 300px;
   z-index: 5;
-  position: relative;
+  position: absolute;
   border-radius: 32px;
  }     
      .buyTickets2{

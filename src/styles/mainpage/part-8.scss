@@ -47,8 +47,17 @@
                 justify-content: center;
     
                 h2 {
-                    font-size: 2.5rem;
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 1.1;
                     margin-bottom: 1.25rem;
+                }
+
+                p :last-child{
+                    font-weight: 600;
+                    line-height: 1.5;
+                    margin-bottom: 24px;
+                    font-size: 16px;
                 }
 
                 p:last-of-type {
@@ -71,7 +80,7 @@
 
                 button {
                     background-color: var(--colors-primary);
-                    color: var(--colors-white);
+                    color: var(--colors-invertedContrast);
                     border: 0;
                     border-radius: 16px;
                     font-size: 1rem;
@@ -97,3 +106,4 @@
         }
     }
 }
+

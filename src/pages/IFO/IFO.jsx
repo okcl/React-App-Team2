@@ -21,74 +21,92 @@ const IFO = () => {
 
             <div className="ifo-latest-wrapper selected">
                 <section id="ifo-main-section">
-                    <div className="stake">
-                        <div className="box-header">
-                            <div className="main-headings">
-                                <h3>Stake CAKE</h3>
-                                <p>Stake, Earn – And more!</p>
+                    <div className='ifo-right-grid-container'>
+                        <div className="stake">
+                            <div className="box-header">
+                                <div className="main-headings">
+                                    <h3>Stake CAKE</h3>
+                                    <p>Stake, Earn – And more!</p>
+                                </div>
+                                <div className="images">
+                                    <img src="/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg" alt="" className="ps-img"/>
+                                    <img src="/assets/autorenew.svg" className="autorenew-img" alt=""/>
+                                </div>
                             </div>
-                            <div className="images">
-                                <img src="/assets/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg" alt="" className="ps-img"/>
-                                <img src="/assets/autorenew.svg" className="autorenew-img" alt=""/>
-                            </div>
-                        </div>
-                        <div className="box-body">
-                            <div className="calculators">
-                                <div className="flexible">
-                                    <p>Flexible APY:</p>
-                                    <div className="numbers">
-                                        <p><strong>1.93%</strong></p>
-                                        <button><img src="/assets/calculator-button.svg" alt=""/></button>
+                            <div className="box-body">
+                                <div className="calculators">
+                                    <div className="flexible">
+                                        <p>Flexible APY:</p>
+                                        <div className="numbers">
+                                            <p><strong>1.93%</strong></p>
+                                            <button><img src="/assets/calculator-button.svg" alt=""/></button>
+                                        </div>
                                     </div>
+                                    <div className="locked">
+                                        <p>Locked APR:</p>
+                                        <div className="numbers">
+                                            <p>Up to <strong>41.35%</strong></p>
+                                            <button><img src="/assets/calculator-button.svg" alt=""/></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="start">
+                                    <p>Start earning</p>
+                                    <button>Connect Wallet</button>
+                                </div>
+                            </div>
+                            <div className="box-footer">
+                                <div className="main-footer-wrapper">
+                                    <div className="main-footer">
+                                        <p>Auto/Locked</p>
+                                        <img src="/assets/info-icon.svg" alt=""/>
+                                    </div>
+                                    <details>
+                                        <summary>Details <img src="/assets/toggle-icon.svg" alt=""/></summary>
+                                    </details>
+                                </div>
+                            </div>
+                            <div className="details">
+                                <div className="staked">
+                                    <p className="dotted">Total staked:</p>
+                                    <p>266,185,112 CAKE</p>
                                 </div>
                                 <div className="locked">
-                                    <p>Locked APR:</p>
-                                    <div className="numbers">
-                                        <p>Up to <strong>41.35%</strong></p>
-                                        <button><img src="/assets/calculator-button.svg" alt=""/></button>
-                                    </div>
+                                    <p>Total locked:</p>
+                                    <p>196,757,436 CAKE</p>
+                                </div>
+                                <div className="lock-duration">
+                                    <p className="dotted">Average lock duration:</p>
+                                    <p>43 weeks</p>
+                                </div>
+                                <div className="performance">
+                                    <p className="dotted">Performance Fee</p>
+                                    <p>0~2%</p>
+                                </div>
+                                <div className="links">
+                                    <a href="#">See Token Info <img src="/assets/svgexport-12.svg" alt=""/></a>
+                                    <a href="#">View Tutorial <img src="/assets/svgexport-12.svg" alt=""/></a>
+                                    <a href="#">View Contract <img src="/assets/link-2.svg" alt=""/></a>
                                 </div>
                             </div>
-                            <div className="start">
-                                <p>Start earning</p>
-                                <button>Connect Wallet</button>
-                            </div>
                         </div>
-                        <div className="box-footer">
-                            <div className="main-footer-wrapper">
-                                <div className="main-footer">
-                                    <p>Auto/Locked</p>
-                                    <img src="/assets/info-icon.svg" alt=""/>
+                        <div className="token-vesting">
+                            <div className="box-header">
+                                <div className="main-headings">
+                                    <h3>Token Vesting</h3>
+                                    <p>You have no tokens available for claiming</p>
                                 </div>
-                                <details>
-                                    <summary>Details <img src="/assets/toggle-icon.svg" alt=""/></summary>
-                                </details>
+                                <img src="/assets/not-tokens.svg" alt=""/>
                             </div>
-                        </div>
-                        <div className="details">
-                            <div className="staked">
-                                <p className="dotted">Total staked:</p>
-                                <p>266,185,112 CAKE</p>
-                            </div>
-                            <div className="locked">
-                                <p>Total locked:</p>
-                                <p>196,757,436 CAKE</p>
-                            </div>
-                            <div className="lock-duration">
-                                <p className="dotted">Average lock duration:</p>
-                                <p>43 weeks</p>
-                            </div>
-                            <div className="performance">
-                                <p className="dotted">Performance Fee</p>
-                                <p>0~2%</p>
-                            </div>
-                            <div className="links">
-                                <a href="#">See Token Info <img src="/assets/svgexport-12.svg" alt=""/></a>
-                                <a href="#">View Tutorial <img src="/assets/svgexport-12.svg" alt=""/></a>
-                                <a href="#">View Contract <img src="/assets/link-2.svg" alt=""/></a>
+                            <div className="box-body">
+                                <img src="/assets/question-icon.svg" alt=""/>
+                                <p><strong>You have no tokens available for claiming</strong></p>
+                                <p>Participate in our next IFO. and remember to lock your CAKE to increase your allocation!</p>
+                                <a href="#take-part">How does it work? »</a>
                             </div>
                         </div>
                     </div>
+
                     <div className="coming-soon">
                         <div className="box-header">
                             <img src="" alt=""/>
@@ -115,21 +133,7 @@ const IFO = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="token-vesting">
-                        <div className="box-header">
-                            <div className="main-headings">
-                                <h3>Token Vesting</h3>
-                                <p>You have no tokens available for claiming</p>
-                            </div>
-                            <img src="/assets/not-tokens.svg" alt=""/>
-                        </div>
-                        <div className="box-body">
-                            <img src="/assets/question-icon.svg" alt=""/>
-                            <p><strong>You have no tokens available for claiming</strong></p>
-                            <p>Participate in our next IFO. and remember to lock your CAKE to increase your allocation!</p>
-                            <a href="#take-part">How does it work? »</a>
-                        </div>
-                    </div>
+
                 </section>
 
                 <section id="take-part">
@@ -255,11 +259,6 @@ const IFO = () => {
                     </div>
                     <a href="#">Apply to run an IFO! <img src="/assets/svgexport-12.svg" alt=""/></a>
                 </section>
-            </div>
-
-
-            <div className="finished-wrapper">
-
             </div>
         </div>
     )

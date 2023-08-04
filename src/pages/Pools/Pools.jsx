@@ -15,31 +15,31 @@ function Pools() {
     };
 
     function SortDropdown(props) {
-
         const [open, setOpen] = useState(false);
-
+      
         const sortOptionText = {
-            hot: "Hot",
-            stake: "Total Staked",
-            apr: "APR",
-            earned: "Earned",
-            latest: "Latest"
-          };
-
-        return(
-            <li className="sort">
-                <div className="sselected">
-                    <div className="sbox">
-                        <div onClick={() => setOpen(!open)} className="stext">
-                            {sortOptionText[sortOption]}
-                        </div>
-                        <img src="assets//down-arrow-filled.svg" alt="down-arrow" />
-                        {open && <SortDropdownMenu />}
-                    </div>
+          hot: "Hot",
+          stake: "Total Staked",
+          apr: "APR",
+          earned: "Earned",
+          latest: "Latest"
+        };
+      
+        return (
+          <li className="sort">
+            <div className="sselected" onClick={() => setOpen(!open)}>
+              <div className="sbox">
+                <div className="stext">
+                  {sortOptionText[sortOption]}
                 </div>
-            </li>
-        )
-    }
+                <img src="assets//down-arrow-filled.svg" alt="down-arrow" />
+                {open && <SortDropdownMenu />}
+              </div>
+            </div>
+          </li>
+        );
+      }
+      
 
     function SortDropdownMenu(){
 
@@ -71,12 +71,6 @@ function Pools() {
 
   return(
     <div className="pools">
-          <button onClick={() => handleSort("stake")}>Stake</button>
-          <button onClick={() => handleSort("hot")}>Hot</button>
-          <button onClick={() => handleSort("apr")}>APR</button>
-          <button onClick={() => handleSort("earned")}>Earned</button>
-          <button onClick={() => handleSort("latest")}>Latest</button>
-
       <div className="earn-nav">
         <div className="enav-wrap">
           <div className="enav-svg1">
@@ -178,10 +172,10 @@ function Pools() {
             <div className="poolboard">
               <LivePools sortOption={sortOption}/>
             </div>
-            <div className="plogo">
+        </div>
+        <div className="plogo">
                 <img src="assets/3d-syrup-bunnies.png" alt="illustration" />
             </div>
-        </div>
       </div>
   </div>
   )

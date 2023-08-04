@@ -60,10 +60,39 @@ export function AllHistory() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="tablebottom">
-        <ShowDetails />
-      </div>
-    </div>
-  );
+        <div id="tablecenter">
+               <div id="tablecentercontent">
+                   <div id="tablecentercontentline1">
+                       <h2 id="winningnumbers">Winning Number</h2>
+                   
+                           <div id="tablecentercontentline2">
+                           <div id="ballswithnumbers">
+                           <div>
+                               <img src="assets/ball1.svg" className="ballnumber" alt=""/>
+                           </div>
+                           <div >
+                               <img src="assets/ball2.svg"className="ballnumber" alt=""/>
+                           </div>
+                           <div >
+                               <img src="assets/ball3.svg"className="ballnumber" alt=""/>
+                           </div>
+                           <div >
+                               <img src="assets/ball4.svg"className="ballnumber" alt=""/>
+                           </div>
+                           <div >
+                               <img src="assets/ball5.svg"className="ballnumber" alt=""/>
+                           </div>
+                           <div >
+                               <img src="assets/ball6.svg"className="ballnumber" alt=""/>
+                           </div>
+                           </div>
+                        </div>  
+                   </div>
+               </div>
+         </div>
+           <div class="tablebottom">
+           <button className="details" id="detailsDiv4" >Details<img src="assets/detailsarrowdown.svg" alt=""/></button>
+           </div>
+  </div>
+    )
 }
